@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Joshua Abril - Full Stack Web Developer specializing in HTML, CSS, JavaScript, Java, and C#. Portfolio showcasing projects and skills."
+    />
+    <meta
+      name="keywords"
+      content="Web Developer, Full Stack, JavaScript, React, Portfolio, Joshua Abril"
+    />
+    <meta name="author" content="Joshua Abril" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%2210 0 100 100%22><text y=%22.90em%22 font-size=%2290%22>📄</text></svg>"
+    />
+    <title>Joshua Portfolio</title>
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/vendor/all.min.css" />
+    <link rel="stylesheet" href="assets/css/vendor/classic-min.css" />
+    <link rel="stylesheet" href="assets/css/component/scrollbar.css" />
+    <link rel="stylesheet" href="assets/css/vendor/intlTelInput.css" />
+    <link rel="stylesheet" href="assets/css/vendor/aos.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="site-logo">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="50"
+          height="30"
+          viewBox="0 0 600 360"
+          fill="currentColor"
+          preserveAspectRatio="xMidYMid meet"
+        >
+          <g transform="translate(0,360) scale(0.1,-0.1)" stroke="none">
+            <path
+              d="M3000 1800 l0 -1800 1500 0 1500 0 0 1800 0 1800 -1500 0 -1500 0 0 -1800z m2000 210 c0 -493 -1 -522 -20 -572 -28 -76 -71 -122 -146 -159 -119 -59 -247 -39 -342 54 -69 67 -70 75 -12 69 63 -6 91 2 130 34 62 53 60 38 61 560 l0 476 -27 29 -28 29 192 0 192 0 0 -520z m-669 -497 c9 -73 59 -174 114 -228 25 -26 76 -61 113 -78 58 -28 77 -32 147 -31 44 0 90 6 103 13 49 27 30 2 -28 -38 -167 -111 -398 -110 -562 3 -120 81 -204 221 -216 354 l-5 63 164 -3 164 -3 6 -52z"
+            />
+            <path
+              d="M1638 2507 l32 -33 0 -480 0 -481 -22 -33 c-41 -59 -72 -75 -148 -75 -78 0 -79 -5 -13 -71 145 -145 390 -107 482 75 37 72 42 146 39 646 l-3 480 -199 2 -199 2 31 -32z"
+            />
+            <path
+              d="M996 1528 c38 -277 239 -460 504 -460 106 0 195 27 280 83 33 23 60 43 58 44 -2 2 -30 -4 -63 -12 -72 -18 -159 -7 -235 32 -103 52 -195 185 -207 298 l-6 57 -169 0 -168 0 6 -42z"
+            />
+          </g>
+        </svg>
+      </div>
+      <button class="hamburger" id="hamburger">
+        <svg
+          class="hamburger-icon"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          width="24"
+          height="24"
+        >
+          <path d="M3 6h18v2H3zM3 11h18v2H3zM3 16h18v2H3z"></path>
+        </svg>
+      </button>
+      <button class="close-btn" id="closeBtn" style="display: none">
+        <svg
+          class="close-icon"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          width="24"
+          height="24"
+        >
+          <path
+            d="M18.3 5.71L12 12l6.3 6.29-1.42 1.42L12 14.41l-6.29 6.3-1.42-1.42L10.59 12 4.3 5.71 5.71 4.3 12 10.59l6.29-6.3z"
+          ></path>
+        </svg>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="hvr-underline-from-center">Home</a></li>
+        <li>
+          <a href="#project" class="hvr-underline-from-center">Projects</a>
+        </li>
+        <li><a href="#about" class="hvr-underline-from-center">About</a></li>
+        <li>
+          <a href="#contact" class="hvr-underline-from-center">Contact</a>
+        </li>
+        <li>
+          <div class="custom-dropdown">
+            <div class="selected-option">
+              <svg
+                class="custom-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 640 512"
+                width="37"
+                fill="currentColor"
+              >
+                <path
+                  d="M0 128C0 92.7 28.7 64 64 64l192 0 48 0 16 0 256 0c35.3 0 64 28.7 64 64l0 256c0 35.3-28.7 64-64 64l-256 0-16 0-48 0L64 448c-35.3 0-64-28.7-64-64L0 128zm320 0l0 256 256 0 0-256-256 0zM178.3 175.9c-3.2-7.2-10.4-11.9-18.3-11.9s-15.1 4.7-18.3 11.9l-64 144c-4.5 10.1 .1 21.9 10.2 26.4s21.9-.1 26.4-10.2l8.9-20.1 73.6 0 8.9 20.1c4.5 10.1 16.3 14.6 26.4 10.2s14.6-16.3 10.2-26.4l-64-144zM160 233.2L179 276l-38 0 19-42.8zM448 164c11 0 20 9 20 20l0 4 44 0 16 0c11 0 20 9 20 20s-9 20-20 20l-2 0-1.6 4.5c-8.9 24.4-22.4 46.6-39.6 65.4c.9 .6 1.8 1.1 2.7 1.6l18.9 11.3c9.5 5.7 12.5 18 6.9 27.4s-18 12.5-27.4 6.9l-18.9-11.3c-4.5-2.7-8.8-5.5-13.1-8.5c-10.6 7.5-21.9 14-34 19.4l-3.6 1.6c-10.1 4.5-21.9-.1-26.4-10.2s.1-21.9 10.2-26.4l3.6-1.6c6.4-2.9 12.6-6.1 18.5-9.8l-12.2-12.2c-7.8-7.8-7.8-20.5 0-28.3s20.5-7.8 28.3 0l14.6 14.6 .5 .5c12.4-13.1 22.5-28.3 29.8-45L448 228l-72 0c-11 0-20-9-20-20s9-20 20-20l52 0 0-4c0-11 9-20 20-20z"
+                />
+              </svg>
+            </div>
+            <ul class="options">
+              <li data-value="en" data-flag="assets/images/flags/gb.svg">
+                <img src="assets/images/flags/gb.svg" alt="flag" width="30" />
+                EN
+              </li>
+              <li data-value="es" data-flag="assets/images/flags/es.svg">
+                <img src="assets/images/flags/es.svg" alt="flag" width="30" />
+                ES
+              </li>
+              <li data-value="ca" data-flag="assets/images/flags/ca.svg">
+                <img src="assets/images/flags/ca.svg" alt="flag" width="30" />
+                CA
+              </li>
+              <li data-value="ru" data-flag="https://flagcdn.com/w40/ru.png">
+                <img
+                  src="https://flagcdn.com/w40/ru.png"
+                  alt="flag"
+                  width="30"
+                />
+                RU
+              </li>
+              <li data-value="zh" data-flag="https://flagcdn.com/w40/cn.png">
+                <img
+                  src="https://flagcdn.com/w40/cn.png"
+                  alt="flag"
+                  width="30"
+                />
+                中文
+              </li>
+              <li data-value="ja" data-flag="https://flagcdn.com/w40/jp.png">
+                <img
+                  src="https://flagcdn.com/w40/jp.png"
+                  alt="flag"
+                  width="30"
+                />
+                日本語
+              </li>
+              <li data-value="tl" data-flag="https://flagcdn.com/w40/ph.png">
+                <img
+                  src="https://flagcdn.com/w40/ph.png"
+                  alt="flag"
+                  width="30"
+                />
+                TL
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <label class="theme-toggle" title="Toggle theme">
+            <input type="checkbox" id="toggleMode" />
+            <span class="theme-toggle-sr">Toggle theme</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+              width="2em"
+              height="2em"
+              fill="currentColor"
+              stroke-linecap="round"
+              class="theme-toggle__classic"
+              viewBox="0 0 32 32"
+            >
+              <clippath id="theme-toggle__classic__cutout">
+                <path d="M0-5h30a1 1 0 0 0 9 13v24H0Z" />
+              </clippath>
+              <g clip-path="url(#theme-toggle__classic__cutout)">
+                <circle cx="16" cy="16" r="9.34" />
+                <g stroke="currentColor" stroke-width="1.5">
+                  <path d="M16 5.5v-4" />
+                  <path d="M16 30.5v-4" />
+                  <path d="M1.5 16h4" />
+                  <path d="M26.5 16h4" />
+                  <path d="m23.4 8.6 2.8-2.8" />
+                  <path d="m5.7 26.3 2.9-2.9" />
+                  <path d="m5.8 5.8 2.8 2.8" />
+                  <path d="m23.4 23.4 2.9 2.9" />
+                </g>
+              </g>
+            </svg>
+          </label>
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <div class="hero">
+        <div class="hero-glassmorphism">
+          <div class="hero-content" data-aos="fade-down">
+            <div class="availability">
+              <span class="indicator"></span>
+              <span class="text">Available To Work</span>
+            </div>
+            <span class="name" style="font-family: Bebas Neue"
+              >Joshua Abril</span
+            >
+            <h3 class="location">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 384 512"
+                class="icon"
+                width="20"
+                height="20"
+                fill="currentColor"
+              >
+                <path
+                  d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"
+                />
+              </svg>
+              Barcelona, Spain
+            </h3>
+            <h1 class="escritura">I'm <span id="escritura"></span></h1>
+            <div
+              class="hero-btn"
+              data-aos="fade-up"
+              data-aos-duration="500"
+              data-aos-delay="150"
+            >
+              <a href="https://github.com/GR1F0X" title="Github"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 496 512"
+                  width="30"
+                  height="30"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+                  /></svg
+              ></a>
+              <a href="" title="LinkedIn"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"
+                  width="30"
+                  height="30"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+                  /></svg
+              ></a>
+              <a href="assets/docs/cv.pdf" download="Joshua-CV.pdf" title="CV"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                  width="30"
+                  height="30"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M0 64C0 28.7 28.7 0 64 0L224 0l0 128c0 17.7 14.3 32 32 32l128 0 0 144-208 0c-35.3 0-64 28.7-64 64l0 144-48 0c-35.3 0-64-28.7-64-64L0 64zm384 64l-128 0L256 0 384 128zM176 352l32 0c30.9 0 56 25.1 56 56s-25.1 56-56 56l-16 0 0 32c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-48 0-80c0-8.8 7.2-16 16-16zm32 80c13.3 0 24-10.7 24-24s-10.7-24-24-24l-16 0 0 48 16 0zm96-80l32 0c26.5 0 48 21.5 48 48l0 64c0 26.5-21.5 48-48 48l-32 0c-8.8 0-16-7.2-16-16l0-128c0-8.8 7.2-16 16-16zm32 128c8.8 0 16-7.2 16-16l0-64c0-8.8-7.2-16-16-16l-16 0 0 96 16 0zm80-112c0-8.8 7.2-16 16-16l48 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 32 32 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 48c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-64 0-64z"
+                  /></svg
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Decorative Divider -->
+      <div class="divider-section">
+        <div class="divider-line"></div>
+        <div class="divider-center">
+          <div class="divider-circle"></div>
+          <div class="divider-ring"></div>
+          <div class="divider-ring-outer"></div>
+        </div>
+        <div class="divider-line"></div>
+      </div>
+
+      <!-- Stats Section -->
+      <section class="stats-section" data-aos="fade-up" data-aos-duration="600">
+        <div class="stats-container">
+          <div class="stat-item">
+            <div class="stat-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 640 512"
+                width="40"
+                height="40"
+                fill="currentColor"
+              >
+                <path
+                  d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"
+                />
+              </svg>
+            </div>
+            <div class="stat-number" data-target="3">0</div>
+            <div class="stat-label stat-projects">Projects Completed</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+                width="40"
+                height="40"
+                fill="currentColor"
+              >
+                <path
+                  d="M176 56l0 40 160 0 0-40c0-4.4-3.6-8-8-8L184 48c-4.4 0-8 3.6-8 8zM128 96l0-40c0-30.9 25.1-56 56-56L328 0c30.9 0 56 25.1 56 56l0 40 0 32 0 352-256 0 0-352 0-32zM64 96l32 0 0 384-32 0c-17.7 0-32-14.3-32-32L32 128c0-17.7 14.3-32 32-32zm384 0c17.7 0 32 14.3 32 32l0 320c0 17.7-14.3 32-32 32l-32 0 0-384 32 0zM224 192c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16s-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16zm16 64l32 0c8.8 0 16-7.2 16-16s-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16s7.2 16 16 16zm16 48c-8.8 0-16 7.2-16 16s7.2 16 16 16l32 0c8.8 0 16-7.2 16-16s-7.2-16-16-16l-32 0z"
+                />
+              </svg>
+            </div>
+            <div class="stat-number" data-target="2">0</div>
+            <div class="stat-label stat-experience">Years Experience</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 640 512"
+                width="40"
+                height="40"
+                fill="currentColor"
+              >
+                <path
+                  d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"
+                />
+              </svg>
+            </div>
+            <div class="stat-number" data-target="10">0</div>
+            <div class="stat-label stat-technologies">Technologies</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+                width="40"
+                height="40"
+                fill="currentColor"
+              >
+                <path
+                  d="M256 0a256 256 0 1 1 0 512A256 256 0 1 1 256 0zM232 120l0 136c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2 280 120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"
+                />
+              </svg>
+            </div>
+            <div class="stat-number" data-target="100">0</div>
+            <div class="stat-label stat-dedication">% Dedication</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="project" id="project">
+        <h1>Projects</h1>
+        <div class="project-container">
+          <div class="card">
+            <div class="card__content">
+              <div class="card__front">
+                <span class="tech-label">Full Stack</span>
+                <span class="year-label">2024</span>
+                <h3 class="card__title" data-translate="project1_title">
+                  Memory PokeAPI
+                </h3>
+                <div class="badges">
+                  <span class="badge">HTML</span>
+                  <span class="badge">CSS</span>
+                  <span class="badge">JS</span>
+                  <span class="badge">Firebase</span>
+                  <span class="badge">PokeAPI</span>
+                </div>
+              </div>
+              <div class="card__back">
+                <p class="card__body">
+                  A Pokémon-themed memory game, developed using PokeAPI to fetch
+                  Pokémon data and Firebase for authentication and data storage.
+                </p>
+                <a
+                  href="https://github.com/gr1f0x/MemoryPokeAPI"
+                  class="card__button"
+                  >Github</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card__content">
+              <div class="card__front">
+                <span class="tech-label">Front End</span>
+                <span class="year-label">2023</span>
+                <h3 class="card__title" data-translate="project2_title">
+                  Amego Kebab
+                </h3>
+                <div class="badges">
+                  <span class="badge">HTML</span>
+                  <span class="badge">CSS</span>
+                  <span class="badge">JS</span>
+                </div>
+              </div>
+              <div class="card__back">
+                <p class="card__body">
+                  Repository for the Amego Kebab website, featuring homepage,
+                  menu, shopping cart, and contact pages, with multilingual
+                  support and integration of JavaScript and TypeScript.
+                </p>
+                <a
+                  href="https://github.com/gr1f0x/AmegoKebab-Website"
+                  class="card__button"
+                  >Github</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card__content">
+              <div class="card__front">
+                <span class="tech-label">Front End</span>
+                <span class="year-label">2023</span>
+                <h3 class="card__title" data-translate="project3_title">
+                  Roulette
+                </h3>
+                <div class="badges">
+                  <span class="badge">HTML</span>
+                  <span class="badge">CSS</span>
+                  <span class="badge">JS</span>
+                </div>
+              </div>
+              <div class="card__back">
+                <p class="card__body">
+                  LaSalleBet is a web-based online casino featuring a main page
+                  and an interactive roulette game, allowing users to place
+                  bets, manage chips, and enjoy an immersive experience.
+                </p>
+                <a
+                  href="https://github.com/gr1f0x/Roulette-page"
+                  class="card__button"
+                  >Github</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-me" id="about">
+        <div class="main-title">
+          <h1 data-aos="fade-up" data-aos-duration="300" data-aos-delay="50">
+            About Me
+          </h1>
+        </div>
+        <div class="about">
+          <div id="bg2">
+            <div id="particles-aboutme"></div>
+          </div>
+
+          <div class="abt-img" id="hero-imga">
+            <img
+              src="assets/images/avatar.jpg"
+              data-aos="fade-up"
+              data-aos-duration="200"
+              data-aos-delay="250"
+            />
+          </div>
+          <div class="about-content">
+            <p
+              class="about-text"
+              data-aos="fade-up"
+              data-aos-duration="300"
+              data-aos-delay="50"
+            >
+              Web developer with solid experience in technical support and
+              specialization in technologies like HTML, CSS, Java, and C#.
+              <br />
+              <br />
+              I also have basic knowledge in languages such as JavaScript,
+              TypeScript, PHP, and Python, allowing me to approach projects from
+              various perspectives. I stand out for my ability to quickly adapt
+              to new environments and technologies.
+              <br />
+              <br />
+              My education includes a vocational qualification in Microcomputer
+              Systems and Networks, and I am currently studying a higher-level
+              course in Web Application Development. I also have practical
+              experience with tools like SQL Server (MySQL) and GIT, which
+              enhance my technical skills.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta">
+        <div class="content">
+          <h2 class="title">Got any project?</h2>
+          <p class="subtitle">Let's work on it</p>
+          <div class="button">
+            <a href="" title="LinkedIn"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+                width="40"
+                height="40"
+                fill="currentColor"
+              >
+                <path
+                  d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+                /></svg
+            ></a>
+            <a href="mailto:joshua.abril171@gmail.com" title="Gmail">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+                width="40"
+                height="40"
+                fill="currentColor"
+              >
+                <path
+                  d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="skills-container">
+        <div
+          class="skill-container"
+          data-aos="zoom-in"
+          data-aos-duration="300"
+          data-aos-delay="100"
+        >
+          <div class="main-title">
+            <h1>Tech Stack</h1>
+          </div>
+
+          <div class="row">
+            <section class="col">
+              <div class="sub-title">
+                <h2 class="skills-programming-title">Programming Skills</h2>
+              </div>
+
+              <div class="skills-container">
+                <div class="skill">
+                  <div class="subject">Node.js</div>
+                  <div class="progress-bar" value="60%">
+                    <div class="progress-line" style="max-width: 60%"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skills-container">
+                <div class="skill">
+                  <div class="subject">React</div>
+                  <div class="progress-bar" value="25%">
+                    <div class="progress-line" style="max-width: 25%"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skills-container">
+                <div class="skill">
+                  <div class="subject">PHP</div>
+                  <div class="progress-bar" value="35%">
+                    <div class="progress-line" style="max-width: 25%"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skills-container">
+                <div class="skill">
+                  <div class="subject">Java</div>
+                  <div class="progress-bar" value="25%">
+                    <div class="progress-line" style="max-width: 25%"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skills-container">
+                <div class="skill">
+                  <div class="subject">C#</div>
+                  <div class="progress-bar" value="25%">
+                    <div class="progress-line" style="max-width: 25%"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skills-container">
+                <div class="skill">
+                  <div class="subject">TypeScript</div>
+                  <div class="progress-bar" value="10%">
+                    <div class="progress-line" style="max-width: 10%"></div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="col">
+              <div class="sub-title">
+                <h2 class="skills-designing-title">Designing Skills</h2>
+              </div>
+
+              <div class="skills-container">
+                <div class="skill">
+                  <div class="subject">Figma</div>
+                  <div class="progress-bar" value="90%">
+                    <div class="progress-line" style="max-width: 90%"></div>
+                  </div>
+                </div>
+
+                <div class="skill">
+                  <div class="subject">Canva</div>
+                  <div class="progress-bar" value="99%">
+                    <div class="progress-line" style="max-width: 99%"></div>
+                  </div>
+                </div>
+
+                <div class="skill">
+                  <div class="subject">Blender</div>
+                  <div class="progress-bar" value="80%">
+                    <div class="progress-line" style="max-width: 80%"></div>
+                  </div>
+                </div>
+                <div class="skill">
+                  <div class="subject">UX</div>
+                  <div class="progress-bar" value="50%">
+                    <div class="progress-line" style="max-width: 50%"></div>
+                  </div>
+                </div>
+
+                <div class="skill">
+                  <div class="subject">Responsive</div>
+                  <div class="progress-bar" value="65%">
+                    <div class="progress-line" style="max-width: 65%"></div>
+                  </div>
+                </div>
+
+                <div class="skill">
+                  <div class="subject">Photoshop</div>
+                  <div class="progress-bar" value="65%">
+                    <div class="progress-line" style="max-width: 65%"></div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <section class="education" id="education">
+        <h1>Formation</h1>
+        <div class="timeline-container">
+          <div class="timeline-event left">
+            <div class="event-content">
+              <h2>2017-2021</h2>
+              <h3 class="timeline-title-1">ESO Diploma</h3>
+              <p class="timeline-desc-1">
+                Graduated from Vedruna Angels, completing compulsory secondary
+                education.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-event right">
+            <div class="event-content">
+              <h2>2021-2023</h2>
+              <h3 class="timeline-title-2">
+                Technician in Microcomputer Systems and Networks
+              </h3>
+              <p class="timeline-desc-2">
+                Earned at La Salle Barceloneta, focusing on IT systems,
+                networking, and technical support.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-event left">
+            <div class="event-content">
+              <h2>2023 - 2025</h2>
+              <h3 class="timeline-title-3">
+                Superior Technician in Web Application Development
+              </h3>
+              <p class="timeline-desc-3">
+                Earned at La Salle Gracia, specializing in web development,
+                databases, and software engineering.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-event right">
+            <div class="event-content">
+              <h2>2025 - ???</h2>
+              <h3 class="timeline-title-2">???</h3>
+              <p class="timeline-desc-2">???</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="contact"
+        id="contact"
+        data-aos="fade-up"
+        data-aos-duration="500"
+        data-aos-delay="550"
+      >
+        <div class="background">
+          <div class="container">
+            <div class="header">
+              <h2 class="contact-header-title">Connect</h2>
+              <p class="contact-header-subtitle">Leave a message!</p>
+            </div>
+            <div class="screen">
+              <div class="screen-header">
+                <div class="screen-header-left">
+                  <div class="screen-header-button close"></div>
+                  <div class="screen-header-button maximize"></div>
+                  <div class="screen-header-button minimize"></div>
+                </div>
+                <div class="screen-header-right">
+                  <div class="screen-header-ellipsis"></div>
+                  <div class="screen-header-ellipsis"></div>
+                  <div class="screen-header-ellipsis"></div>
+                </div>
+              </div>
+              <div class="screen-body">
+                <div class="screen-body-item left">
+                  <div class="app-title">
+                    <span>GET IN</span>
+                    <span>TOUCH</span>
+                  </div>
+                  <div class="app-contact">
+                    E-Mail: joshua.abril1646@gmail.com
+                  </div>
+                </div>
+                <div class="screen-body-item">
+                  <form class="app-form" method="post" action="">
+                    <div class="app-form-group">
+                      <label for="name" class="form-label-name"
+                        >Full Name</label
+                      >
+                      <input
+                        class="app-form-control"
+                        id="name"
+                        type="text"
+                        name="name"
+                        required
+                      />
+                    </div>
+                    <div class="app-form-group">
+                      <label for="email" class="form-label-email">Email</label>
+                      <input
+                        class="app-form-control"
+                        id="email"
+                        type="email"
+                        name="email"
+                        required
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                        title="Por favor, introduce un correo válido."
+                      />
+                    </div>
+                    <div class="app-form-group">
+                      <label for="contact" class="form-label-phone"
+                        >Contact Number</label
+                      >
+                      <input
+                        class="app-form-control"
+                        id="phone"
+                        type="tel"
+                        name="phone"
+                        required
+                      />
+                    </div>
+                    <div class="app-form-group">
+                      <label for="subject" class="form-label-subject"
+                        >Subject</label
+                      >
+                      <input
+                        class="app-form-control"
+                        id="subject"
+                        type="text"
+                        name="subject"
+                        required
+                      />
+                    </div>
+                    <div class="app-form-group message">
+                      <label for="message" class="form-label-message"
+                        >Message</label
+                      >
+                      <textarea
+                        class="app-form-control"
+                        id="message"
+                        name="message"
+                        rows="4"
+                        required
+                      ></textarea>
+                    </div>
+                    <div class="app-form-group buttons">
+                      <button
+                        class="app-form-button form-btn-reset"
+                        type="reset"
+                      >
+                        Reset
+                      </button>
+                      <button
+                        class="app-form-button form-btn-submit"
+                        type="submit"
+                      >
+                        Submit
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Back to Top Button -->
+      <button id="backToTop" class="back-to-top" title="Back to top">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 384 512"
+          width="24"
+          height="24"
+          fill="currentColor"
+        >
+          <path
+            d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2 160 448c0 17.7 14.3 32 32 32s32-14.3 32-32l0-306.7L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"
+          />
+        </svg>
+      </button>
+
+      <footer class="footer">
+        <div class="waves">
+          <div class="wave" id="wave1"></div>
+          <div class="wave" id="wave2"></div>
+          <div class="wave" id="wave3"></div>
+          <div class="wave" id="wave4"></div>
+        </div>
+        <div class="frow">
+          <a href="https://github.com/GR1F0X" target="_blank">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 496 512"
+              width="40"
+              height="40"
+              fill="currentColor"
+            >
+              <path
+                d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+              />
+            </svg>
+          </a>
+          <a href="https://github.com/GR1F0X" target="_blank">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"
+              width="40"
+              height="40"
+              fill="currentColor"
+            >
+              <path
+                d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+              />
+            </svg>
+          </a>
+          <a href="https://github.com/GR1F0X" target="_blank">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+              width="40"
+              height="40"
+              fill="currentColor"
+            >
+              <path
+                d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"
+              />
+            </svg>
+          </a>
+          <a href="https://github.com/GR1F0X" target="_blank">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+              width="40"
+              height="40"
+              fill="currentColor"
+            >
+              <path
+                d="M502.3 159.7l-234-156c-8-4.9-16.5-5-24.6 0l-234 156C3.7 163.7 0 170.8 0 178v156c0 7.1 3.7 14.3 9.7 18.3l234 156c8 4.9 16.5 5 24.6 0l234-156c6-4 9.7-11.1 9.7-18.3V178c0-7.1-3.7-14.3-9.7-18.3zM278 63.1l172.3 114.9-76.9 51.4L278 165.7V63.1zm-44 0v102.6l-95.4 63.7-76.9-51.4L234 63.1zM44 219.1l55.1 36.9L44 292.8v-73.7zm190 229.7L61.7 334l76.9-51.4L234 346.3v102.6zm22-140.9l-77.7-52 77.7-52 77.7 52-77.7 52zm22 140.9V346.3l95.4-63.7 76.9 51.4L278 448.8zm190-156l-55.1-36.9L468 219.1v73.7z"
+              />
+            </svg>
+          </a>
+        </div>
+        <h3>Josh</h3>
+      </footer>
+    </main>
+    <script>
+      const eventElements = document.querySelectorAll(".timeline-event");
+      const observerOptions = { threshold: 0.2 };
+      const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+            observer.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
+
+      eventElements.forEach((eventElement) => {
+        observer.observe(eventElement);
+      });
+    </script>
+    <script src="assets/js/lib/aos.js"></script>
+    <script>
+      AOS.init({ once: true });
+    </script>
+    <script src="assets/js/lib/particles.min.js"></script>
+    <script src="assets/js/lib/intlTelInput.min.js"></script>
+    <script src="assets/js/lib/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/translations.js"></script>
+    <script src="assets/scripts/home.js"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
