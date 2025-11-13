@@ -13,16 +13,72 @@
       content="Web Developer, Full Stack, JavaScript, React, Portfolio, Joshua Abril"
     />
     <meta name="author" content="Joshua Abril" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://gr1f0x.github.io/portfolio/" />
+    <meta
+      property="og:title"
+      content="Joshua Abril - Full Stack Web Developer"
+    />
+    <meta
+      property="og:description"
+      content="Portfolio showcasing web development projects and skills in HTML, CSS, JavaScript, Java, and C#"
+    />
+    <meta
+      property="og:image"
+      content="https://gr1f0x.github.io/portfolio/assets/images/avatar.jpg"
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:url"
+      content="https://gr1f0x.github.io/portfolio/"
+    />
+    <meta
+      property="twitter:title"
+      content="Joshua Abril - Full Stack Web Developer"
+    />
+    <meta
+      property="twitter:description"
+      content="Portfolio showcasing web development projects and skills"
+    />
+    <meta
+      property="twitter:image"
+      content="https://gr1f0x.github.io/portfolio/assets/images/avatar.jpg"
+    />
+
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#667eea" />
+    <meta
+      name="theme-color"
+      content="#1a1a2e"
+      media="(prefers-color-scheme: dark)"
+    />
+
     <link
       rel="icon"
       href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%2210 0 100 100%22><text y=%22.90em%22 font-size=%2290%22>📄</text></svg>"
     />
-    <title>Joshua Portfolio</title>
+    <title>Joshua Abril | Full Stack Web Developer Portfolio</title>
+
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://flagcdn.com" />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+
     <link rel="stylesheet" href="assets/css/reset.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/vendor/all.min.css" />
     <link rel="stylesheet" href="assets/css/vendor/classic-min.css" />
     <link rel="stylesheet" href="assets/css/component/scrollbar.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
     <link rel="stylesheet" href="assets/css/vendor/intlTelInput.css" />
     <link rel="stylesheet" href="assets/css/vendor/aos.css" />
     <link
@@ -31,9 +87,14 @@
     />
   </head>
 
-  <body>
-    <nav class="navbar">
-      <div class="site-logo">
+  <body class="loading">
+    <!-- Page Loader -->
+    <div class="page-loader">
+      <div class="loader-spinner"></div>
+    </div>
+
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+      <div class="site-logo" aria-label="Joshua Abril Logo">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="50"
@@ -55,9 +116,15 @@
           </g>
         </svg>
       </div>
-      <button class="hamburger" id="hamburger">
+      <button
+        class="hamburger"
+        id="hamburger"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+      >
         <svg
           class="hamburger-icon"
+          aria-hidden="true"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
           fill="currentColor"
@@ -67,9 +134,15 @@
           <path d="M3 6h18v2H3zM3 11h18v2H3zM3 16h18v2H3z"></path>
         </svg>
       </button>
-      <button class="close-btn" id="closeBtn" style="display: none">
+      <button
+        class="close-btn"
+        id="closeBtn"
+        style="display: none"
+        aria-label="Close navigation menu"
+      >
         <svg
           class="close-icon"
+          aria-hidden="true"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
           fill="currentColor"
@@ -91,17 +164,28 @@
           <a href="#contact" class="hvr-underline-from-center">Contact</a>
         </li>
         <li>
-          <div class="custom-dropdown">
-            <div class="selected-option">
+          <div
+            class="custom-dropdown"
+            role="listbox"
+            aria-label="Language selector"
+          >
+            <div
+              class="selected-option"
+              role="button"
+              aria-haspopup="listbox"
+              aria-label="Select language"
+              tabindex="0"
+            >
               <svg
                 class="custom-icon"
                 xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 640 512"
-                width="37"
+                viewBox="0 0 24 24"
+                width="28"
                 fill="currentColor"
+                aria-hidden="true"
               >
                 <path
-                  d="M0 128C0 92.7 28.7 64 64 64l192 0 48 0 16 0 256 0c35.3 0 64 28.7 64 64l0 256c0 35.3-28.7 64-64 64l-256 0-16 0-48 0L64 448c-35.3 0-64-28.7-64-64L0 128zm320 0l0 256 256 0 0-256-256 0zM178.3 175.9c-3.2-7.2-10.4-11.9-18.3-11.9s-15.1 4.7-18.3 11.9l-64 144c-4.5 10.1 .1 21.9 10.2 26.4s21.9-.1 26.4-10.2l8.9-20.1 73.6 0 8.9 20.1c4.5 10.1 16.3 14.6 26.4 10.2s14.6-16.3 10.2-26.4l-64-144zM160 233.2L179 276l-38 0 19-42.8zM448 164c11 0 20 9 20 20l0 4 44 0 16 0c11 0 20 9 20 20s-9 20-20 20l-2 0-1.6 4.5c-8.9 24.4-22.4 46.6-39.6 65.4c.9 .6 1.8 1.1 2.7 1.6l18.9 11.3c9.5 5.7 12.5 18 6.9 27.4s-18 12.5-27.4 6.9l-18.9-11.3c-4.5-2.7-8.8-5.5-13.1-8.5c-10.6 7.5-21.9 14-34 19.4l-3.6 1.6c-10.1 4.5-21.9-.1-26.4-10.2s.1-21.9 10.2-26.4l3.6-1.6c6.4-2.9 12.6-6.1 18.5-9.8l-12.2-12.2c-7.8-7.8-7.8-20.5 0-28.3s20.5-7.8 28.3 0l14.6 14.6 .5 .5c12.4-13.1 22.5-28.3 29.8-45L448 228l-72 0c-11 0-20-9-20-20s9-20 20-20l52 0 0-4c0-11 9-20 20-20z"
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"
                 />
               </svg>
             </div>
@@ -222,7 +306,7 @@
               data-aos-duration="500"
               data-aos-delay="150"
             >
-              <a href="https://github.com/GR1F0X" title="Github"
+              <a href="https://github.com/GR1F0X" title="Github" target="_blank"
                 ><svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 496 512"
@@ -234,7 +318,10 @@
                     d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
                   /></svg
               ></a>
-              <a href="" title="LinkedIn"
+              <a
+                href="https://www.linkedin.com/in/joshua-abril-a229392b8/"
+                title="LinkedIn"
+                target="_blank"
                 ><svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 448 512"
@@ -246,7 +333,11 @@
                     d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
                   /></svg
               ></a>
-              <a href="assets/docs/cv.pdf" download="Joshua-CV.pdf" title="CV"
+              <a
+                href="assets/docs/cv.pdf"
+                download="Joshua-CV.pdf"
+                title="CV"
+                target="_blank"
                 ><svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
@@ -375,6 +466,7 @@
                 <a
                   href="https://github.com/gr1f0x/MemoryPokeAPI"
                   class="card__button"
+                  target="_blank"
                   >Github</a
                 >
               </div>
@@ -404,6 +496,7 @@
                 <a
                   href="https://github.com/gr1f0x/AmegoKebab-Website"
                   class="card__button"
+                  target="_blank"
                   >Github</a
                 >
               </div>
@@ -433,6 +526,7 @@
                 <a
                   href="https://github.com/gr1f0x/Roulette-page"
                   class="card__button"
+                  target="_blank"
                   >Github</a
                 >
               </div>
@@ -492,7 +586,10 @@
           <h2 class="title">Got any project?</h2>
           <p class="subtitle">Let's work on it</p>
           <div class="button">
-            <a href="" title="LinkedIn"
+            <a
+              href="https://www.linkedin.com/in/joshua-abril-a229392b8/"
+              title="LinkedIn"
+              target="_blank"
               ><svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 512 512"
@@ -504,7 +601,11 @@
                   d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
                 /></svg
             ></a>
-            <a href="mailto:joshua.abril171@gmail.com" title="Gmail">
+            <a
+              href="mailto:joshua.abril171@gmail.com"
+              title="Gmail"
+              target="_blank"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 512 512"
@@ -642,6 +743,78 @@
               </div>
             </section>
           </div>
+
+          <!-- Tech Icons Grid -->
+          <div
+            class="tech-icons-grid"
+            data-aos="fade-up"
+            data-aos-duration="400"
+          >
+            <!-- Frontend -->
+            <div class="tech-icon" title="HTML5">
+              <i class="devicon-html5-plain colored"></i>
+            </div>
+            <div class="tech-icon" title="CSS3">
+              <i class="devicon-css3-plain colored"></i>
+            </div>
+            <div class="tech-icon" title="JavaScript">
+              <i class="devicon-javascript-plain colored"></i>
+            </div>
+            <div class="tech-icon" title="TypeScript">
+              <i class="devicon-typescript-plain colored"></i>
+            </div>
+            <div class="tech-icon" title="React">
+              <i class="devicon-react-original colored"></i>
+            </div>
+            <div class="tech-icon" title="Next.js">
+              <i class="devicon-nextjs-plain"></i>
+            </div>
+            <div class="tech-icon" title="Tailwind CSS">
+              <i class="devicon-tailwindcss-plain colored"></i>
+            </div>
+            <!-- Backend -->
+            <div class="tech-icon" title="Node.js">
+              <i class="devicon-nodejs-plain colored"></i>
+            </div>
+            <div class="tech-icon" title="Python">
+              <i class="devicon-python-plain colored"></i>
+            </div>
+            <div class="tech-icon" title="PHP">
+              <i class="devicon-php-plain colored"></i>
+            </div>
+            <div class="tech-icon" title="Java">
+              <i class="devicon-java-plain colored"></i>
+            </div>
+            <div class="tech-icon" title="C#">
+              <i class="devicon-csharp-plain colored"></i>
+            </div>
+            <!-- Databases -->
+            <div class="tech-icon" title="MongoDB">
+              <i class="devicon-mongodb-plain colored"></i>
+            </div>
+            <div class="tech-icon" title="MySQL">
+              <i class="devicon-mysql-plain colored"></i>
+            </div>
+            <!-- Tools & Others -->
+            <div class="tech-icon" title="Git">
+              <i class="devicon-git-plain colored"></i>
+            </div>
+            <div class="tech-icon" title="GitHub">
+              <i class="devicon-github-original"></i>
+            </div>
+            <div class="tech-icon" title="Docker">
+              <i class="devicon-docker-plain colored"></i>
+            </div>
+            <div class="tech-icon" title="Supabase">
+              <i class="devicon-supabase-plain colored"></i>
+            </div>
+            <div class="tech-icon" title="npm">
+              <i class="devicon-npm-original-wordmark colored"></i>
+            </div>
+            <div class="tech-icon" title="Figma">
+              <i class="devicon-figma-plain colored"></i>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -674,19 +847,12 @@
             <div class="event-content">
               <h2>2023 - 2025</h2>
               <h3 class="timeline-title-3">
-                Superior Technician in Web Application Development
+                Developer of multi-platform applications (DAM)
               </h3>
               <p class="timeline-desc-3">
-                Earned at La Salle Gracia, specializing in web development,
-                databases, and software engineering.
+                Currently studying at La Salle Barceloneta, specializing in
+                creating applications for various platforms.
               </p>
-            </div>
-          </div>
-          <div class="timeline-event right">
-            <div class="event-content">
-              <h2>2025 - ???</h2>
-              <h3 class="timeline-title-2">???</h3>
-              <p class="timeline-desc-2">???</p>
             </div>
           </div>
         </div>
@@ -729,7 +895,12 @@
                   </div>
                 </div>
                 <div class="screen-body-item">
-                  <form class="app-form" method="post" action="">
+                  <form
+                    class="app-form"
+                    id="contactForm"
+                    method="POST"
+                    action="https://formspree.io/f/xananzzq"
+                  >
                     <div class="app-form-group">
                       <label for="name" class="form-label-name"
                         >Full Name</label
@@ -848,7 +1019,10 @@
               />
             </svg>
           </a>
-          <a href="https://github.com/GR1F0X" target="_blank">
+          <a
+            href="https://www.linkedin.com/in/joshua-abril-a229392b8/"
+            target="_blank"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 448 512"
@@ -861,7 +1035,7 @@
               />
             </svg>
           </a>
-          <a href="https://github.com/GR1F0X" target="_blank">
+          <a href="mailto:joshua.abril1646@gmail.com" target="_blank">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 512 512"
@@ -871,19 +1045,6 @@
             >
               <path
                 d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"
-              />
-            </svg>
-          </a>
-          <a href="https://github.com/GR1F0X" target="_blank">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 512 512"
-              width="40"
-              height="40"
-              fill="currentColor"
-            >
-              <path
-                d="M502.3 159.7l-234-156c-8-4.9-16.5-5-24.6 0l-234 156C3.7 163.7 0 170.8 0 178v156c0 7.1 3.7 14.3 9.7 18.3l234 156c8 4.9 16.5 5 24.6 0l234-156c6-4 9.7-11.1 9.7-18.3V178c0-7.1-3.7-14.3-9.7-18.3zM278 63.1l172.3 114.9-76.9 51.4L278 165.7V63.1zm-44 0v102.6l-95.4 63.7-76.9-51.4L234 63.1zM44 219.1l55.1 36.9L44 292.8v-73.7zm190 229.7L61.7 334l76.9-51.4L234 346.3v102.6zm22-140.9l-77.7-52 77.7-52 77.7 52-77.7 52zm22 140.9V346.3l95.4-63.7 76.9 51.4L278 448.8zm190-156l-55.1-36.9L468 219.1v73.7z"
               />
             </svg>
           </a>

@@ -1,3 +1,13 @@
+// Page Loader
+window.addEventListener("load", () => {
+  const loader = document.querySelector(".page-loader");
+  const body = document.body;
+
+  // Ocultar inmediatamente si ya está cargado
+  loader.classList.add("hidden");
+  body.classList.remove("loading");
+});
+
 const palabras = ["Full Stack Dev."];
 
 let letraIndex = 0;
@@ -19,20 +29,30 @@ function escribir() {
 
 escribir();
 
+// Función para actualizar aria-expanded
+const updateAriaExpanded = (isOpen) => {
+  const hamburger = document.getElementById("hamburger");
+  if (hamburger) {
+    hamburger.setAttribute("aria-expanded", isOpen.toString());
+  }
+};
+
 const hamburger = document.getElementById("hamburger");
 const closeBtn = document.getElementById("closeBtn");
 const navLinks = document.getElementById("nav-links");
 
 hamburger.addEventListener("click", () => {
-  navLinks.classList.toggle("active");
+  const isOpen = navLinks.classList.toggle("active");
   hamburger.style.display = "none";
   closeBtn.style.display = "block";
+  updateAriaExpanded(isOpen);
 });
 
 closeBtn.addEventListener("click", () => {
-  navLinks.classList.toggle("active");
+  navLinks.classList.remove("active");
   closeBtn.style.display = "none";
   hamburger.style.display = "block";
+  updateAriaExpanded(false);
 });
 
 // Cerrar menú al hacer clic en cualquier enlace
@@ -42,6 +62,7 @@ navLinksItems.forEach((link) => {
     navLinks.classList.remove("active");
     closeBtn.style.display = "none";
     hamburger.style.display = "block";
+    updateAriaExpanded(false);
   });
 });
 
@@ -97,22 +118,8 @@ languageOptions.forEach((option) => {
   option.addEventListener("click", (e) => {
     e.stopPropagation();
     const lang = option.getAttribute("data-value");
-    const flagSrc = option.getAttribute("data-flag");
 
-    // Actualizar el ícono seleccionado
-    const selectedOption = document.querySelector(".selected-option");
-    const currentIcon = selectedOption.querySelector("svg, img");
-    const flagImg = document.createElement("img");
-    flagImg.src = flagSrc;
-    flagImg.alt = lang;
-    flagImg.width = 30;
-    if (currentIcon) {
-      currentIcon.replaceWith(flagImg);
-    } else {
-      selectedOption.appendChild(flagImg);
-    }
-
-    // Cambiar idioma
+    // Cambiar idioma sin cambiar el icono
     changeLanguage(lang);
 
     // Cerrar dropdown
@@ -125,25 +132,6 @@ document.addEventListener("DOMContentLoaded", () => {
   // Inicializar idioma
   const currentLang = getCurrentLanguage();
   updatePageLanguage(currentLang);
-
-  // Actualizar el ícono del idioma actual
-  const currentOption = document.querySelector(
-    `.options li[data-value="${currentLang}"]`
-  );
-  if (currentOption) {
-    const flagSrc = currentOption.getAttribute("data-flag");
-    const selectedOption = document.querySelector(".selected-option");
-    const currentIcon = selectedOption.querySelector("svg, img");
-    const flagImg = document.createElement("img");
-    flagImg.src = flagSrc;
-    flagImg.alt = currentLang;
-    flagImg.width = 30;
-    if (currentIcon) {
-      currentIcon.replaceWith(flagImg);
-    } else {
-      selectedOption.appendChild(flagImg);
-    }
-  }
 
   // Animación de skills
   const skills = document.querySelectorAll(".skills-container");

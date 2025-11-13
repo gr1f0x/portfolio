@@ -824,6 +824,236 @@ main {
   }
 }
 
+/* Tech Icons Grid */
+.tech-icons-grid {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 20px;
+  margin-top: 50px;
+  padding: 40px 20px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+  place-content: center;
+}
+
+.tech-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  background: light-dark(rgba(102, 126, 234, 0.05), rgba(102, 126, 234, 0.1));
+  border: 2px solid
+    light-dark(rgba(102, 126, 234, 0.2), rgba(102, 126, 234, 0.3));
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+}
+
+.tech-icon i {
+  font-size: 42px;
+  transition: all 0.3s ease;
+}
+
+.tech-icon:hover {
+  background: light-dark(rgba(102, 126, 234, 0.15), rgba(102, 126, 234, 0.2));
+  border-color: #667eea;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+}
+
+.tech-icon:hover i {
+  transform: scale(1.1);
+}
+
+/* Tech Icon Label */
+.tech-icon::after {
+  content: attr(title);
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%) scale(0.9);
+  background: light-dark(rgba(0, 0, 0, 0.9), rgba(255, 255, 255, 0.95));
+  color: light-dark(#ffffff, #000000);
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 10;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.tech-icon:hover::after {
+  opacity: 1;
+  bottom: -36px;
+  transform: translateX(-50%) scale(1);
+}
+
+/* Individual Tech Icon Colors on Hover */
+.tech-icon[title="HTML5"]:hover {
+  border-color: #e34c26;
+  box-shadow: 0 8px 20px rgba(227, 76, 38, 0.3);
+}
+
+.tech-icon[title="CSS3"]:hover {
+  border-color: #1572b6;
+  box-shadow: 0 8px 20px rgba(21, 114, 182, 0.3);
+}
+
+.tech-icon[title="JavaScript"]:hover {
+  border-color: #f7df1e;
+  box-shadow: 0 8px 20px rgba(247, 223, 30, 0.3);
+}
+
+.tech-icon[title="React"]:hover {
+  border-color: #61dafb;
+  box-shadow: 0 8px 20px rgba(97, 218, 251, 0.3);
+}
+
+.tech-icon[title="Node.js"]:hover {
+  border-color: #339933;
+  box-shadow: 0 8px 20px rgba(51, 153, 51, 0.3);
+}
+
+.tech-icon[title="PHP"]:hover {
+  border-color: #777bb4;
+  box-shadow: 0 8px 20px rgba(119, 123, 180, 0.3);
+}
+
+.tech-icon[title="Java"]:hover {
+  border-color: #007396;
+  box-shadow: 0 8px 20px rgba(0, 115, 150, 0.3);
+}
+
+.tech-icon[title="Python"]:hover {
+  border-color: #3776ab;
+  box-shadow: 0 8px 20px rgba(55, 118, 171, 0.3);
+}
+
+.tech-icon[title="Git"]:hover {
+  border-color: #f05032;
+  box-shadow: 0 8px 20px rgba(240, 80, 50, 0.3);
+}
+
+.tech-icon[title="GitHub"]:hover {
+  border-color: #181717;
+  box-shadow: 0 8px 20px rgba(24, 23, 23, 0.3);
+}
+
+.tech-icon[title="Figma"]:hover {
+  border-color: #f24e1e;
+  box-shadow: 0 8px 20px rgba(242, 78, 30, 0.3);
+}
+
+.tech-icon[title="npm"]:hover {
+  border-color: #cb3837;
+  box-shadow: 0 8px 20px rgba(203, 56, 55, 0.3);
+}
+
+.tech-icon[title="TypeScript"]:hover {
+  border-color: #3178c6;
+  box-shadow: 0 8px 20px rgba(49, 120, 198, 0.3);
+}
+
+.tech-icon[title="C#"]:hover {
+  border-color: #239120;
+  box-shadow: 0 8px 20px rgba(35, 145, 32, 0.3);
+}
+
+.tech-icon[title="Tailwind CSS"]:hover {
+  border-color: #06b6d4;
+  box-shadow: 0 8px 20px rgba(6, 182, 212, 0.3);
+}
+
+.tech-icon[title="Docker"]:hover {
+  border-color: #2496ed;
+  box-shadow: 0 8px 20px rgba(36, 150, 237, 0.3);
+}
+
+.tech-icon[title="Supabase"]:hover {
+  border-color: #3ecf8e;
+  box-shadow: 0 8px 20px rgba(62, 207, 142, 0.3);
+}
+
+.tech-icon[title="Next.js"]:hover {
+  border-color: light-dark(#000000, #ffffff);
+  box-shadow: 0 8px 20px
+    light-dark(rgba(0, 0, 0, 0.3), rgba(255, 255, 255, 0.3));
+}
+.tech-icon[title="Next.js"]:hover i {
+  color: light-dark(#000000, #ffffff);
+}
+
+.tech-icon[title="MongoDB"]:hover {
+  border-color: #47a248;
+  box-shadow: 0 8px 20px rgba(71, 162, 72, 0.3);
+}
+
+.tech-icon[title="MySQL"]:hover {
+  border-color: #4479a1;
+  box-shadow: 0 8px 20px rgba(68, 121, 161, 0.3);
+}
+
+@media screen and (max-width: 768px) {
+  .tech-icons-grid {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    padding: 30px 15px;
+  }
+
+  .tech-icon {
+    width: 65px;
+    height: 65px;
+  }
+
+  .tech-icon i {
+    font-size: 34px;
+  }
+
+  .tech-icon::after {
+    font-size: 11px;
+    padding: 5px 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .tech-icons-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    padding: 25px 10px;
+  }
+
+  .tech-icon {
+    width: 58px;
+    height: 58px;
+  }
+
+  .tech-icon i {
+    font-size: 28px;
+  }
+
+  .tech-icon::after {
+    font-size: 10px;
+    padding: 4px 8px;
+    bottom: -28px;
+  }
+
+  .tech-icon:hover::after {
+    bottom: -34px;
+  }
+}
+
 /* About */
 .about-me .main-title h1 {
   display: flex;
@@ -861,11 +1091,37 @@ main {
 .abt-img {
   align-self: center;
   z-index: 3;
+  position: relative;
 }
 
 .about .abt-img img {
   width: 200px;
   border-radius: 50%;
+  animation: morph 8s ease-in-out infinite;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.about .abt-img img:hover {
+  animation-play-state: paused;
+  transform: scale(1.05);
+  box-shadow: 0 12px 40px rgba(102, 126, 234, 0.4);
+}
+
+@keyframes morph {
+  0%,
+  100% {
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+  }
+  25% {
+    border-radius: 60% 40% 55% 45% / 55% 60% 40% 45%;
+  }
+  50% {
+    border-radius: 45% 55% 40% 60% / 60% 45% 55% 40%;
+  }
+  75% {
+    border-radius: 55% 45% 60% 40% / 40% 55% 45% 60%;
+  }
 }
 
 .about-content {
@@ -2804,4 +3060,44 @@ textarea:focus-visible {
 
 .fade-in {
   animation: fadeIn 0.6s ease-out;
+}
+
+/* Loading state para mejor UX */
+body.loading {
+  overflow: hidden;
+}
+
+.page-loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--light-dark-background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  opacity: 1;
+  transition: opacity 0.2s ease-out;
+}
+
+.page-loader.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.loader-spinner {
+  width: 50px;
+  height: 50px;
+  border: 3px solid rgba(102, 126, 234, 0.2);
+  border-top-color: #667eea;
+  border-radius: 50%;
+  animation: spinLoader 0.8s linear infinite;
+}
+
+@keyframes spinLoader {
+  to {
+    transform: rotate(360deg);
+  }
 }
