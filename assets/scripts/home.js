@@ -8,26 +8,32 @@ window.addEventListener("load", () => {
   body.classList.remove("loading");
 });
 
-const palabras = ["Full Stack Dev."];
-
-let letraIndex = 0;
+window.palabras = ["Full Stack Dev."];
+window.letraIndex = 0;
 const velocidadEscritura = 30;
 
-function escribir() {
+window.escribir = function () {
   const escrituraDiv = document.getElementById("escritura");
-  escrituraDiv.textContent = palabras[0].substring(0, letraIndex);
+  if (!escrituraDiv) return;
 
-  if (letraIndex < palabras[0].length) {
-    letraIndex++;
-    setTimeout(escribir, velocidadEscritura);
+  escrituraDiv.textContent = window.palabras[0].substring(0, window.letraIndex);
+
+  if (window.letraIndex < window.palabras[0].length) {
+    window.letraIndex++;
+    setTimeout(window.escribir, velocidadEscritura);
   } else {
     setTimeout(() => {
       escrituraDiv.style.borderRight = "none";
     }, 500);
   }
-}
+};
 
-escribir();
+// Iniciar el efecto de escritura cuando el DOM esté listo
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", window.escribir);
+} else {
+  window.escribir();
+}
 
 // Función para actualizar aria-expanded
 const updateAriaExpanded = (isOpen) => {
@@ -175,10 +181,6 @@ languageOptions.forEach((option) => {
 
 // Inicializar todo al cargar la página
 document.addEventListener("DOMContentLoaded", () => {
-  // Inicializar idioma
-  const currentLang = getCurrentLanguage();
-  updatePageLanguage(currentLang);
-
   // Animación de skills
   const skills = document.querySelectorAll(".skills-container");
 

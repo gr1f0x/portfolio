@@ -71,7 +71,13 @@
 
     <link rel="stylesheet" href="assets/css/reset.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="stylesheet" href="assets/css/vendor/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="assets/css/vendor/classic-min.css" />
     <link rel="stylesheet" href="assets/css/component/scrollbar.css" />
     <link
@@ -97,8 +103,8 @@
       <div class="site-logo" aria-label="Joshua Abril Logo">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="50"
-          height="30"
+          width="42"
+          height="25"
           viewBox="0 0 600 360"
           fill="currentColor"
           preserveAspectRatio="xMidYMid meet"
@@ -157,13 +163,45 @@
         </svg>
       </button>
       <ul class="nav-links" id="nav-links">
-        <li><a href="#home" class="hvr-underline-from-center">Home</a></li>
         <li>
-          <a href="#project" class="hvr-underline-from-center">Projects</a>
+          <a
+            href="#home"
+            class="hvr-underline-from-center"
+            data-translate="nav_home"
+            >Home</a
+          >
         </li>
-        <li><a href="#about" class="hvr-underline-from-center">About</a></li>
         <li>
-          <a href="#contact" class="hvr-underline-from-center">Contact</a>
+          <a
+            href="#project"
+            class="hvr-underline-from-center"
+            data-translate="nav_projects"
+            >Projects</a
+          >
+        </li>
+        <li>
+          <a
+            href="#about"
+            class="hvr-underline-from-center"
+            data-translate="nav_about"
+            >About</a
+          >
+        </li>
+        <li>
+          <a
+            href="#experience"
+            class="hvr-underline-from-center"
+            data-translate="nav_experience"
+            >Experience</a
+          >
+        </li>
+        <li>
+          <a
+            href="#contact"
+            class="hvr-underline-from-center"
+            data-translate="nav_contact"
+            >Contact</a
+          >
         </li>
         <li>
           <button
@@ -227,7 +265,12 @@
       <div class="language-modal-overlay" id="languageModalOverlay"></div>
       <div class="language-modal-content">
         <div class="language-modal-header">
-          <h3 class="language-modal-title">Select Language</h3>
+          <h3
+            class="language-modal-title"
+            data-translate="language_modal_title"
+          >
+            Select Language
+          </h3>
           <button
             class="language-modal-close"
             id="languageModalClose"
@@ -268,6 +311,7 @@
             type="text"
             class="language-search-input"
             id="languageSearch"
+            data-translate-placeholder="language_search_placeholder"
             placeholder="Search languages..."
             autocomplete="off"
           />
@@ -387,7 +431,9 @@
           <div class="hero-content" data-aos="fade-down">
             <div class="availability">
               <span class="indicator"></span>
-              <span class="text">Available To Work</span>
+              <span class="text" data-translate="available"
+                >Available To Work</span
+              >
             </div>
             <span class="name" style="font-family: Bebas Neue"
               >Joshua Abril</span
@@ -405,9 +451,12 @@
                   d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"
                 />
               </svg>
-              Barcelona, Spain
+              <span data-translate="location">Barcelona, Spain</span>
             </h3>
-            <h1 class="escritura">I'm <span id="escritura"></span></h1>
+            <h1 class="escritura">
+              <span data-translate="hero_title">I'm</span>
+              <span id="escritura"></span>
+            </h1>
             <div
               class="hero-btn"
               data-aos="fade-up"
@@ -491,7 +540,12 @@
               </svg>
             </div>
             <div class="stat-number" data-target="2">0</div>
-            <div class="stat-label stat-experience">Years Experience</div>
+            <div
+              class="stat-label stat-experience"
+              data-translate="stats_experience"
+            >
+              Years Experience
+            </div>
           </div>
           <div class="stat-item">
             <div class="stat-icon">
@@ -508,7 +562,12 @@
               </svg>
             </div>
             <div class="stat-number" data-target="11">0</div>
-            <div class="stat-label stat-projects">Projects Completed</div>
+            <div
+              class="stat-label stat-projects"
+              data-translate="stats_projects"
+            >
+              Projects Completed
+            </div>
           </div>
           <div class="stat-item">
             <div class="stat-icon">
@@ -525,7 +584,12 @@
               </svg>
             </div>
             <div class="stat-number" data-target="20">0</div>
-            <div class="stat-label stat-technologies">Technologies</div>
+            <div
+              class="stat-label stat-technologies"
+              data-translate="stats_technologies"
+            >
+              Technologies
+            </div>
           </div>
           <div class="stat-item">
             <div class="stat-icon">
@@ -542,18 +606,32 @@
               </svg>
             </div>
             <div class="stat-number" data-target="100">0</div>
-            <div class="stat-label stat-dedication">% Dedication</div>
+            <div
+              class="stat-label stat-dedication"
+              data-translate="stats_dedication"
+            >
+              % Dedication
+            </div>
           </div>
         </div>
       </section>
 
       <section class="project" id="project">
-        <h1>Projects</h1>
+        <div class="section-header">
+          <h1 class="section-title" data-translate="projects_title">
+            Projects
+          </h1>
+          <p class="section-subtitle" data-translate="projects_subtitle">
+            Featured projects showcasing my development skills
+          </p>
+        </div>
         <div class="project-container">
           <div class="card">
             <div class="card__content">
               <div class="card__front">
-                <span class="tech-label">Full Stack</span>
+                <span class="tech-label" data-translate="tech_label_fullstack"
+                  >Full Stack</span
+                >
                 <span class="year-label">2024</span>
                 <h3 class="card__title" data-translate="project1_title">
                   Memory PokeAPI
@@ -567,7 +645,7 @@
                 </div>
               </div>
               <div class="card__back">
-                <p class="card__body">
+                <p class="card__body" data-translate="project1_desc">
                   A Pokémon-themed memory game, developed using PokeAPI to fetch
                   Pokémon data and Firebase for authentication and data storage.
                 </p>
@@ -575,6 +653,7 @@
                   href="https://github.com/gr1f0x/MemoryPokeAPI"
                   class="card__button"
                   target="_blank"
+                  data-translate="project_github"
                   >Github</a
                 >
               </div>
@@ -584,7 +663,9 @@
           <div class="card">
             <div class="card__content">
               <div class="card__front">
-                <span class="tech-label">Front End</span>
+                <span class="tech-label" data-translate="tech_label_frontend"
+                  >Front End</span
+                >
                 <span class="year-label">2023</span>
                 <h3 class="card__title" data-translate="project2_title">
                   Amego Kebab
@@ -596,7 +677,7 @@
                 </div>
               </div>
               <div class="card__back">
-                <p class="card__body">
+                <p class="card__body" data-translate="project2_desc">
                   Repository for the Amego Kebab website, featuring homepage,
                   menu, shopping cart, and contact pages, with multilingual
                   support and integration of JavaScript and TypeScript.
@@ -605,6 +686,7 @@
                   href="https://github.com/gr1f0x/AmegoKebab-Website"
                   class="card__button"
                   target="_blank"
+                  data-translate="project_github"
                   >Github</a
                 >
               </div>
@@ -614,7 +696,9 @@
           <div class="card">
             <div class="card__content">
               <div class="card__front">
-                <span class="tech-label">Front End</span>
+                <span class="tech-label" data-translate="tech_label_frontend"
+                  >Front End</span
+                >
                 <span class="year-label">2023</span>
                 <h3 class="card__title" data-translate="project3_title">
                   Roulette
@@ -626,7 +710,7 @@
                 </div>
               </div>
               <div class="card__back">
-                <p class="card__body">
+                <p class="card__body" data-translate="project3_desc">
                   LaSalleBet is a web-based online casino featuring a main page
                   and an interactive roulette game, allowing users to place
                   bets, manage chips, and enjoy an immersive experience.
@@ -635,6 +719,7 @@
                   href="https://github.com/gr1f0x/Roulette-page"
                   class="card__button"
                   target="_blank"
+                  data-translate="project_github"
                   >Github</a
                 >
               </div>
@@ -644,10 +729,19 @@
       </section>
 
       <section class="about-me" id="about">
-        <div class="main-title">
-          <h1 data-aos="fade-up" data-aos-duration="300" data-aos-delay="50">
+        <div class="section-header">
+          <h1
+            class="section-title"
+            data-translate="about_title"
+            data-aos="fade-up"
+            data-aos-duration="300"
+            data-aos-delay="50"
+          >
             About Me
           </h1>
+          <p class="section-subtitle" data-translate="about_subtitle">
+            Passionate developer building innovative solutions
+          </p>
         </div>
         <div class="about">
           <div id="bg2">
@@ -668,6 +762,7 @@
               data-aos="fade-up"
               data-aos-duration="300"
               data-aos-delay="50"
+              data-translate="about_text"
             >
               Web developer with solid experience in technical support and
               specialization in technologies like HTML, CSS, Java, and C#.
@@ -691,8 +786,10 @@
 
       <section class="cta">
         <div class="content">
-          <h2 class="title">Got any project?</h2>
-          <p class="subtitle">Let's work on it</p>
+          <h2 class="cta-title" data-translate="cta_title">Got any project?</h2>
+          <p class="cta-subtitle" data-translate="cta_subtitle">
+            Let's work together and create something amazing
+          </p>
           <div class="button">
             <a
               href="https://www.linkedin.com/in/joshua-abril-a229392b8/"
@@ -737,230 +834,752 @@
           data-aos-duration="300"
           data-aos-delay="100"
         >
-          <div class="main-title">
-            <h1>Tech Stack</h1>
+          <div class="tech-header">
+            <h1 class="tech-title" data-translate="skills_title">Tech Stack</h1>
+            <p class="tech-subtitle" data-translate="skills_subtitle">
+              Technologies and tools I use to build amazing projects
+            </p>
           </div>
 
-          <div class="row">
-            <section class="col">
-              <div class="sub-title">
-                <h2 class="skills-programming-title">Programming Skills</h2>
-              </div>
-
-              <div class="skills-container">
-                <div class="skill">
-                  <div class="subject">Node.js</div>
-                  <div class="progress-bar" value="60%">
-                    <div class="progress-line" style="max-width: 60%"></div>
-                  </div>
+          <!-- Tech Categories Grid -->
+          <div class="tech-categories-grid">
+            <!-- Frontend Category -->
+            <div
+              class="tech-category-card"
+              data-aos="fade-up"
+              data-aos-duration="500"
+            >
+              <div class="category-header">
+                <div class="category-icon">
+                  <i class="fas fa-code"></i>
                 </div>
+                <h3
+                  class="category-title"
+                  data-translate="tech_category_frontend"
+                >
+                  Frontend
+                </h3>
               </div>
-
-              <div class="skills-container">
-                <div class="skill">
-                  <div class="subject">React</div>
-                  <div class="progress-bar" value="25%">
-                    <div class="progress-line" style="max-width: 25%"></div>
-                  </div>
+              <div class="tech-items">
+                <div class="tech-item">
+                  <i class="devicon-html5-plain colored"></i>
+                  <span class="tech-name">HTML5</span>
+                  <span class="tech-level expert">Expert</span>
                 </div>
-              </div>
-
-              <div class="skills-container">
-                <div class="skill">
-                  <div class="subject">PHP</div>
-                  <div class="progress-bar" value="35%">
-                    <div class="progress-line" style="max-width: 25%"></div>
-                  </div>
+                <div class="tech-item">
+                  <i class="devicon-css3-plain colored"></i>
+                  <span class="tech-name">CSS3</span>
+                  <span class="tech-level expert">Expert</span>
                 </div>
-              </div>
-
-              <div class="skills-container">
-                <div class="skill">
-                  <div class="subject">Java</div>
-                  <div class="progress-bar" value="25%">
-                    <div class="progress-line" style="max-width: 25%"></div>
-                  </div>
+                <div class="tech-item">
+                  <i class="devicon-javascript-plain colored"></i>
+                  <span class="tech-name">JavaScript</span>
+                  <span class="tech-level advanced">Advanced</span>
                 </div>
-              </div>
-
-              <div class="skills-container">
-                <div class="skill">
-                  <div class="subject">C#</div>
-                  <div class="progress-bar" value="25%">
-                    <div class="progress-line" style="max-width: 25%"></div>
-                  </div>
+                <div class="tech-item">
+                  <i class="devicon-typescript-plain colored"></i>
+                  <span class="tech-name">TypeScript</span>
+                  <span class="tech-level intermediate">Intermediate</span>
                 </div>
-              </div>
-
-              <div class="skills-container">
-                <div class="skill">
-                  <div class="subject">TypeScript</div>
-                  <div class="progress-bar" value="10%">
-                    <div class="progress-line" style="max-width: 10%"></div>
-                  </div>
+                <div class="tech-item">
+                  <i class="devicon-react-original colored"></i>
+                  <span class="tech-name">React</span>
+                  <span class="tech-level intermediate">Intermediate</span>
+                </div>
+                <div class="tech-item">
+                  <i class="devicon-nextjs-plain"></i>
+                  <span class="tech-name">Next.js</span>
+                  <span class="tech-level intermediate">Intermediate</span>
+                </div>
+                <div class="tech-item">
+                  <i class="devicon-tailwindcss-plain colored"></i>
+                  <span class="tech-name">Tailwind</span>
+                  <span class="tech-level advanced">Advanced</span>
                 </div>
               </div>
-            </section>
+            </div>
 
-            <section class="col">
-              <div class="sub-title">
-                <h2 class="skills-designing-title">Designing Skills</h2>
+            <!-- Backend Category -->
+            <div
+              class="tech-category-card"
+              data-aos="fade-up"
+              data-aos-duration="500"
+              data-aos-delay="100"
+            >
+              <div class="category-header">
+                <div class="category-icon">
+                  <i class="fas fa-server"></i>
+                </div>
+                <h3
+                  class="category-title"
+                  data-translate="tech_category_backend"
+                >
+                  Backend
+                </h3>
               </div>
-
-              <div class="skills-container">
-                <div class="skill">
-                  <div class="subject">Figma</div>
-                  <div class="progress-bar" value="90%">
-                    <div class="progress-line" style="max-width: 90%"></div>
-                  </div>
+              <div class="tech-items">
+                <div class="tech-item">
+                  <i class="devicon-nodejs-plain colored"></i>
+                  <span class="tech-name">Node.js</span>
+                  <span class="tech-level advanced">Advanced</span>
                 </div>
-
-                <div class="skill">
-                  <div class="subject">Canva</div>
-                  <div class="progress-bar" value="99%">
-                    <div class="progress-line" style="max-width: 99%"></div>
-                  </div>
+                <div class="tech-item">
+                  <i class="devicon-python-plain colored"></i>
+                  <span class="tech-name">Python</span>
+                  <span class="tech-level intermediate">Intermediate</span>
                 </div>
-
-                <div class="skill">
-                  <div class="subject">Blender</div>
-                  <div class="progress-bar" value="80%">
-                    <div class="progress-line" style="max-width: 80%"></div>
-                  </div>
+                <div class="tech-item">
+                  <i class="devicon-php-plain colored"></i>
+                  <span class="tech-name">PHP</span>
+                  <span class="tech-level intermediate">Intermediate</span>
                 </div>
-                <div class="skill">
-                  <div class="subject">UX</div>
-                  <div class="progress-bar" value="50%">
-                    <div class="progress-line" style="max-width: 50%"></div>
-                  </div>
+                <div class="tech-item">
+                  <i class="devicon-java-plain colored"></i>
+                  <span class="tech-name">Java</span>
+                  <span class="tech-level intermediate">Intermediate</span>
                 </div>
-
-                <div class="skill">
-                  <div class="subject">Responsive</div>
-                  <div class="progress-bar" value="65%">
-                    <div class="progress-line" style="max-width: 65%"></div>
-                  </div>
-                </div>
-
-                <div class="skill">
-                  <div class="subject">Photoshop</div>
-                  <div class="progress-bar" value="65%">
-                    <div class="progress-line" style="max-width: 65%"></div>
-                  </div>
+                <div class="tech-item">
+                  <i class="devicon-csharp-plain colored"></i>
+                  <span class="tech-name">C#</span>
+                  <span class="tech-level intermediate">Intermediate</span>
                 </div>
               </div>
-            </section>
+            </div>
+
+            <!-- Database Category -->
+            <div
+              class="tech-category-card"
+              data-aos="fade-up"
+              data-aos-duration="500"
+              data-aos-delay="200"
+            >
+              <div class="category-header">
+                <div class="category-icon">
+                  <i class="fas fa-database"></i>
+                </div>
+                <h3
+                  class="category-title"
+                  data-translate="tech_category_databases"
+                >
+                  Databases
+                </h3>
+              </div>
+              <div class="tech-items">
+                <div class="tech-item">
+                  <i class="devicon-mongodb-plain colored"></i>
+                  <span class="tech-name">MongoDB</span>
+                  <span class="tech-level advanced">Advanced</span>
+                </div>
+                <div class="tech-item">
+                  <i class="devicon-mysql-plain colored"></i>
+                  <span class="tech-name">MySQL</span>
+                  <span class="tech-level advanced">Advanced</span>
+                </div>
+                <div class="tech-item">
+                  <i class="devicon-supabase-plain colored"></i>
+                  <span class="tech-name">Supabase</span>
+                  <span class="tech-level intermediate">Intermediate</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tools & Version Control Category -->
+            <div
+              class="tech-category-card"
+              data-aos="fade-up"
+              data-aos-duration="500"
+              data-aos-delay="300"
+            >
+              <div class="category-header">
+                <div class="category-icon">
+                  <i class="fas fa-code-branch"></i>
+                </div>
+                <h3 class="category-title" data-translate="tech_category_tools">
+                  Tools & DevOps
+                </h3>
+              </div>
+              <div class="tech-items">
+                <div class="tech-item">
+                  <i class="devicon-git-plain colored"></i>
+                  <span class="tech-name">Git</span>
+                  <span class="tech-level expert">Expert</span>
+                </div>
+                <div class="tech-item">
+                  <i class="devicon-github-original"></i>
+                  <span class="tech-name">GitHub</span>
+                  <span class="tech-level expert">Expert</span>
+                </div>
+                <div class="tech-item">
+                  <i class="devicon-docker-plain colored"></i>
+                  <span class="tech-name">Docker</span>
+                  <span class="tech-level intermediate">Intermediate</span>
+                </div>
+                <div class="tech-item">
+                  <i class="devicon-npm-original-wordmark colored"></i>
+                  <span class="tech-name">npm</span>
+                  <span class="tech-level expert">Expert</span>
+                </div>
+                <div class="tech-item">
+                  <i class="devicon-vscode-plain colored"></i>
+                  <span class="tech-name">VS Code</span>
+                  <span class="tech-level expert">Expert</span>
+                </div>
+                <div class="tech-item">
+                  <i class="devicon-bash-plain colored"></i>
+                  <span class="tech-name">Terminal</span>
+                  <span class="tech-level advanced">Advanced</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Design & Creative Category -->
+            <div
+              class="tech-category-card"
+              data-aos="fade-up"
+              data-aos-duration="500"
+              data-aos-delay="400"
+            >
+              <div class="category-header">
+                <div class="category-icon">
+                  <i class="fas fa-paint-brush"></i>
+                </div>
+                <h3
+                  class="category-title"
+                  data-translate="tech_category_design"
+                >
+                  Design & Creative
+                </h3>
+              </div>
+              <div class="tech-items">
+                <div class="tech-item">
+                  <i class="devicon-figma-plain colored"></i>
+                  <span class="tech-name">Figma</span>
+                  <span class="tech-level expert">Expert</span>
+                </div>
+                <div class="tech-item">
+                  <i class="devicon-canva-plain colored"></i>
+                  <span class="tech-name">Canva</span>
+                  <span class="tech-level expert">Expert</span>
+                </div>
+                <div class="tech-item">
+                  <i class="devicon-blender-original colored"></i>
+                  <span class="tech-name">Blender</span>
+                  <span class="tech-level advanced">Advanced</span>
+                </div>
+                <div class="tech-item">
+                  <i class="devicon-photoshop-plain colored"></i>
+                  <span class="tech-name">Photoshop</span>
+                  <span class="tech-level advanced">Advanced</span>
+                </div>
+                <div class="tech-item">
+                  <i class="devicon-sketch-plain colored"></i>
+                  <span class="tech-name">UI/UX Design</span>
+                  <span class="tech-level advanced">Advanced</span>
+                </div>
+                <div class="tech-item">
+                  <i class="fas fa-mobile-alt" style="color: #7952b3"></i>
+                  <span class="tech-name">Responsive Design</span>
+                  <span class="tech-level expert">Expert</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Data & Analytics Category -->
+            <div
+              class="tech-category-card"
+              data-aos="fade-up"
+              data-aos-duration="500"
+              data-aos-delay="500"
+            >
+              <div class="category-header">
+                <div class="category-icon">
+                  <i class="fas fa-chart-line"></i>
+                </div>
+                <h3 class="category-title" data-translate="tech_category_data">
+                  Data & Analytics
+                </h3>
+              </div>
+              <div class="tech-items">
+                <div class="tech-item">
+                  <i class="devicon-jupyter-plain colored"></i>
+                  <span class="tech-name">Data Analysis</span>
+                  <span class="tech-level beginner">Beginner</span>
+                </div>
+                <div class="tech-item">
+                  <i class="fas fa-chart-bar" style="color: #f59e0b"></i>
+                  <span class="tech-name">Big Data</span>
+                  <span class="tech-level beginner">Beginner</span>
+                </div>
+                <div class="tech-item">
+                  <i class="devicon-grafana-plain colored"></i>
+                  <span class="tech-name">Analytics</span>
+                  <span class="tech-level beginner">Beginner</span>
+                </div>
+                <div class="tech-item">
+                  <i class="devicon-pandas-plain colored"></i>
+                  <span class="tech-name">Pandas</span>
+                  <span class="tech-level beginner">Beginner</span>
+                </div>
+                <div class="tech-item">
+                  <i class="fas fa-file-excel" style="color: #217346"></i>
+                  <span class="tech-name">Excel</span>
+                  <span class="tech-level advanced">Advanced</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Work Experience Section -->
+      <section class="experience" id="experience">
+        <div class="experience-container">
+          <div class="experience-header">
+            <span class="experience-badge" data-translate="experience_badge"
+              >💼 Professional Journey</span
+            >
+            <h1 class="experience-title" data-translate="experience_title">
+              Work Experience
+            </h1>
+            <p class="experience-subtitle" data-translate="experience_subtitle">
+              Building real-world solutions and growing professionally
+            </p>
           </div>
 
-          <!-- Tech Icons Grid -->
-          <div
-            class="tech-icons-grid"
-            data-aos="fade-up"
-            data-aos-duration="400"
-          >
-            <!-- Frontend -->
-            <div class="tech-icon" title="HTML5">
-              <i class="devicon-html5-plain colored"></i>
+          <div class="experience-timeline">
+            <!-- Experience Item 1 -->
+            <div
+              class="experience-item"
+              data-aos="fade-right"
+              data-aos-duration="800"
+            >
+              <div class="experience-content">
+                <div class="experience-header-box">
+                  <div
+                    class="experience-year-badge"
+                    data-translate="exp1_period"
+                  >
+                    2024 - Present
+                  </div>
+                  <div class="experience-role-title" data-translate="exp1_role">
+                    Full Stack Developer Intern
+                  </div>
+                  <div class="experience-company-name">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"
+                      ></path>
+                      <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                    <span data-translate="exp1_company"
+                      >Tech Company / Freelance</span
+                    >
+                  </div>
+                </div>
+                <p class="experience-desc" data-translate="exp1_description">
+                  Developing web applications using modern technologies. Working
+                  on both frontend and backend, implementing responsive designs
+                  and RESTful APIs.
+                </p>
+                <div class="experience-tech-stack">
+                  <span class="tech-pill">HTML/CSS</span>
+                  <span class="tech-pill">JavaScript</span>
+                  <span class="tech-pill">React</span>
+                  <span class="tech-pill">Node.js</span>
+                  <span class="tech-pill">MySQL</span>
+                </div>
+              </div>
+              <div class="experience-icon-wrapper">
+                <div class="experience-icon-bg">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="28"
+                    height="28"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"
+                    />
+                  </svg>
+                </div>
+              </div>
             </div>
-            <div class="tech-icon" title="CSS3">
-              <i class="devicon-css3-plain colored"></i>
+
+            <!-- Experience Item 2 -->
+            <div
+              class="experience-item"
+              data-aos="fade-left"
+              data-aos-duration="800"
+            >
+              <div class="experience-content">
+                <div class="experience-header-box">
+                  <div
+                    class="experience-year-badge"
+                    data-translate="exp2_period"
+                  >
+                    2023 - 2024
+                  </div>
+                  <div class="experience-role-title" data-translate="exp2_role">
+                    IT Support Technician
+                  </div>
+                  <div class="experience-company-name">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"
+                      ></path>
+                      <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                    <span data-translate="exp2_company"
+                      >Local Business / Internship</span
+                    >
+                  </div>
+                </div>
+                <p class="experience-desc" data-translate="exp2_description">
+                  Provided technical support, maintained computer systems and
+                  networks. Troubleshot hardware and software issues, ensuring
+                  smooth operations.
+                </p>
+                <div class="experience-tech-stack">
+                  <span class="tech-pill">Windows</span>
+                  <span class="tech-pill">Networking</span>
+                  <span class="tech-pill">Hardware</span>
+                  <span class="tech-pill">Troubleshooting</span>
+                </div>
+              </div>
+              <div class="experience-icon-wrapper">
+                <div class="experience-icon-bg">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="28"
+                    height="28"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                    />
+                  </svg>
+                </div>
+              </div>
             </div>
-            <div class="tech-icon" title="JavaScript">
-              <i class="devicon-javascript-plain colored"></i>
-            </div>
-            <div class="tech-icon" title="TypeScript">
-              <i class="devicon-typescript-plain colored"></i>
-            </div>
-            <div class="tech-icon" title="React">
-              <i class="devicon-react-original colored"></i>
-            </div>
-            <div class="tech-icon" title="Next.js">
-              <i class="devicon-nextjs-plain"></i>
-            </div>
-            <div class="tech-icon" title="Tailwind CSS">
-              <i class="devicon-tailwindcss-plain colored"></i>
-            </div>
-            <!-- Backend -->
-            <div class="tech-icon" title="Node.js">
-              <i class="devicon-nodejs-plain colored"></i>
-            </div>
-            <div class="tech-icon" title="Python">
-              <i class="devicon-python-plain colored"></i>
-            </div>
-            <div class="tech-icon" title="PHP">
-              <i class="devicon-php-plain colored"></i>
-            </div>
-            <div class="tech-icon" title="Java">
-              <i class="devicon-java-plain colored"></i>
-            </div>
-            <div class="tech-icon" title="C#">
-              <i class="devicon-csharp-plain colored"></i>
-            </div>
-            <!-- Databases -->
-            <div class="tech-icon" title="MongoDB">
-              <i class="devicon-mongodb-plain colored"></i>
-            </div>
-            <div class="tech-icon" title="MySQL">
-              <i class="devicon-mysql-plain colored"></i>
-            </div>
-            <!-- Tools & Others -->
-            <div class="tech-icon" title="Git">
-              <i class="devicon-git-plain colored"></i>
-            </div>
-            <div class="tech-icon" title="GitHub">
-              <i class="devicon-github-original"></i>
-            </div>
-            <div class="tech-icon" title="Docker">
-              <i class="devicon-docker-plain colored"></i>
-            </div>
-            <div class="tech-icon" title="Supabase">
-              <i class="devicon-supabase-plain colored"></i>
-            </div>
-            <div class="tech-icon" title="npm">
-              <i class="devicon-npm-original-wordmark colored"></i>
-            </div>
-            <div class="tech-icon" title="Figma">
-              <i class="devicon-figma-plain colored"></i>
+
+            <!-- Experience Item 3 -->
+            <div
+              class="experience-item"
+              data-aos="fade-right"
+              data-aos-duration="800"
+            >
+              <div class="experience-content">
+                <div class="experience-header-box">
+                  <div
+                    class="experience-year-badge"
+                    data-translate="exp3_period"
+                  >
+                    2022 - 2023
+                  </div>
+                  <div class="experience-role-title" data-translate="exp3_role">
+                    Freelance Web Projects
+                  </div>
+                  <div class="experience-company-name">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"
+                      ></path>
+                      <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                    <span data-translate="exp3_company">Self-Employed</span>
+                  </div>
+                </div>
+                <p class="experience-desc" data-translate="exp3_description">
+                  Created custom websites for small businesses and personal
+                  projects. Focused on responsive design, user experience, and
+                  client satisfaction.
+                </p>
+                <div class="experience-tech-stack">
+                  <span class="tech-pill">HTML/CSS</span>
+                  <span class="tech-pill">JavaScript</span>
+                  <span class="tech-pill">PHP</span>
+                  <span class="tech-pill">WordPress</span>
+                  <span class="tech-pill">UI/UX</span>
+                </div>
+              </div>
+              <div class="experience-icon-wrapper">
+                <div class="experience-icon-bg">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="28"
+                    height="28"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"
+                    />
+                  </svg>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       <section class="education" id="education">
-        <h1>Formation</h1>
-        <div class="timeline-container">
-          <div class="timeline-event left">
-            <div class="event-content">
-              <h2>2017-2021</h2>
-              <h3 class="timeline-title-1">ESO Diploma</h3>
-              <p class="timeline-desc-1">
-                Graduated from Vedruna Angels, completing compulsory secondary
-                education.
-              </p>
+        <div class="education-header">
+          <span class="education-badge" data-translate="education_badge"
+            >🎓 My Journey</span
+          >
+          <h1 class="education-title" data-translate="education_title">
+            Formation
+          </h1>
+          <p class="education-subtitle" data-translate="education_subtitle">
+            Continuous learning and growth in technology
+          </p>
+        </div>
+        <div class="education-grid-container">
+          <!-- Education Card 4 -->
+          <div
+            class="edu-card edu-card-active"
+            data-aos="fade-up"
+            data-aos-duration="600"
+          >
+            <div class="edu-card-year">
+              2025 - Present
+              <span class="edu-current-badge" data-translate="current_badge"
+                >Current</span
+              >
+            </div>
+            <div class="edu-card-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"
+                />
+              </svg>
+            </div>
+            <h3 class="edu-card-title" data-translate="timeline4_title">
+              Online Courses in Data Analysis & Big Data
+            </h3>
+            <div class="edu-card-institution">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                ></path>
+              </svg>
+              <span data-translate="timeline_institution_online"
+                >Online Learning Platforms</span
+              >
+            </div>
+            <p class="edu-card-desc" data-translate="timeline4_desc">
+              Expanding my skills through specialized online courses in Data
+              Analysis, Big Data technologies, and advanced analytics to
+              complement my development expertise.
+            </p>
+            <div class="edu-card-tags">
+              <span class="edu-card-tag" data-translate="tag_data_analysis"
+                >Data Analysis</span
+              >
+              <span class="edu-card-tag" data-translate="tag_big_data"
+                >Big Data</span
+              >
+              <span class="edu-card-tag" data-translate="tag_analytics"
+                >Analytics</span
+              >
+              <span class="edu-card-tag" data-translate="tag_self_learning"
+                >Self-learning</span
+              >
             </div>
           </div>
-          <div class="timeline-event right">
-            <div class="event-content">
-              <h2>2021-2023</h2>
-              <h3 class="timeline-title-2">
-                Technician in Microcomputer Systems and Networks
-              </h3>
-              <p class="timeline-desc-2">
-                Earned at La Salle Barceloneta, focusing on IT systems,
-                networking, and technical support.
-              </p>
+
+          <!-- Education Card 3 -->
+          <div
+            class="edu-card"
+            data-aos="fade-up"
+            data-aos-duration="600"
+            data-aos-delay="100"
+          >
+            <div class="edu-card-year">2023 - 2025</div>
+            <div class="edu-card-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"
+                />
+              </svg>
+            </div>
+            <h3 class="edu-card-title" data-translate="timeline3_title">
+              Higher Technician in Web Application Development
+            </h3>
+            <div class="edu-card-institution">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span data-translate="timeline_institution_barceloneta"
+                >La Salle Gracia</span
+              >
+            </div>
+            <p class="edu-card-desc" data-translate="timeline3_desc">
+              Currently studying at La Salle Gracia, specializing in web
+              development, databases, and software engineering.
+            </p>
+            <div class="edu-card-tags">
+              <span class="edu-card-tag" data-translate="tag_development"
+                >Development</span
+              >
+              <span class="edu-card-tag" data-translate="tag_multiplatform"
+                >Multi-platform</span
+              >
+              <span class="edu-card-tag" data-translate="tag_modern_tech"
+                >Modern Tech</span
+              >
             </div>
           </div>
-          <div class="timeline-event left">
-            <div class="event-content">
-              <h2>2023 - 2025</h2>
-              <h3 class="timeline-title-3">
-                Developer of multi-platform applications (DAM)
-              </h3>
-              <p class="timeline-desc-3">
-                Currently studying at La Salle Barceloneta, specializing in
-                creating applications for various platforms.
-              </p>
+
+          <!-- Education Card 2 -->
+          <div
+            class="edu-card"
+            data-aos="fade-up"
+            data-aos-duration="600"
+            data-aos-delay="200"
+          >
+            <div class="edu-card-year">2021-2023</div>
+            <div class="edu-card-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M20 18c1.1 0 1.99-.9 1.99-2L22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2H0v2h24v-2h-4zM4 6h16v10H4V6z"
+                />
+              </svg>
+            </div>
+            <h3 class="edu-card-title" data-translate="timeline2_title">
+              Technician in Microcomputer Systems and Networks
+            </h3>
+            <div class="edu-card-institution">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span data-translate="timeline_institution_barceloneta"
+                >La Salle Barceloneta</span
+              >
+            </div>
+            <p class="edu-card-desc" data-translate="timeline2_desc">
+              Obtained at La Salle Barceloneta, focused on IT systems,
+              networking, and technical support.
+            </p>
+            <div class="edu-card-tags">
+              <span class="edu-card-tag" data-translate="tag_it_systems"
+                >IT Systems</span
+              >
+              <span class="edu-card-tag" data-translate="tag_networking"
+                >Networking</span
+              >
+              <span class="edu-card-tag" data-translate="tag_support"
+                >Support</span
+              >
+            </div>
+          </div>
+
+          <!-- Education Card 1 -->
+          <div
+            class="edu-card"
+            data-aos="fade-up"
+            data-aos-duration="600"
+            data-aos-delay="300"
+          >
+            <div class="edu-card-year">2017-2021</div>
+            <div class="edu-card-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 3L1 9l11 6 9-4.91V17h2V9M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"
+                />
+              </svg>
+            </div>
+            <h3 class="edu-card-title" data-translate="timeline1_title">
+              ESO Diploma
+            </h3>
+            <div class="edu-card-institution">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span data-translate="timeline_institution_vedruna"
+                >Vedruna Angels</span
+              >
+            </div>
+            <p class="edu-card-desc" data-translate="timeline1_desc">
+              Graduated from Vedruna Angels, completing compulsory secondary
+              education.
+            </p>
+            <div class="edu-card-tags">
+              <span class="edu-card-tag" data-translate="tag_foundation"
+                >Foundation</span
+              >
+              <span class="edu-card-tag" data-translate="tag_academic"
+                >Academic</span
+              >
             </div>
           </div>
         </div>
@@ -976,8 +1595,18 @@
         <div class="background">
           <div class="container">
             <div class="header">
-              <h2 class="contact-header-title">Connect</h2>
-              <p class="contact-header-subtitle">Leave a message!</p>
+              <h2
+                class="contact-header-title"
+                data-translate="contact_header_title"
+              >
+                Connect
+              </h2>
+              <p
+                class="contact-header-subtitle"
+                data-translate="contact_header_subtitle"
+              >
+                Leave a message!
+              </p>
             </div>
             <div class="screen">
               <div class="screen-header">
@@ -995,7 +1624,7 @@
               <div class="screen-body">
                 <div class="screen-body-item left">
                   <div class="app-title">
-                    <span>GET IN</span>
+                    <span data-translate="contact_title">GET IN</span>
                     <span>TOUCH</span>
                   </div>
                   <div class="app-contact">
@@ -1010,7 +1639,10 @@
                     action="https://formspree.io/f/xananzzq"
                   >
                     <div class="app-form-group">
-                      <label for="name" class="form-label-name"
+                      <label
+                        for="name"
+                        class="form-label-name"
+                        data-translate="contact_name"
                         >Full Name</label
                       >
                       <input
@@ -1022,7 +1654,12 @@
                       />
                     </div>
                     <div class="app-form-group">
-                      <label for="email" class="form-label-email">Email</label>
+                      <label
+                        for="email"
+                        class="form-label-email"
+                        data-translate="contact_email"
+                        >Email</label
+                      >
                       <input
                         class="app-form-control"
                         id="email"
@@ -1034,7 +1671,10 @@
                       />
                     </div>
                     <div class="app-form-group">
-                      <label for="contact" class="form-label-phone"
+                      <label
+                        for="contact"
+                        class="form-label-phone"
+                        data-translate="contact_phone"
                         >Contact Number</label
                       >
                       <input
@@ -1046,7 +1686,10 @@
                       />
                     </div>
                     <div class="app-form-group">
-                      <label for="subject" class="form-label-subject"
+                      <label
+                        for="subject"
+                        class="form-label-subject"
+                        data-translate="contact_subject"
                         >Subject</label
                       >
                       <input
@@ -1058,7 +1701,10 @@
                       />
                     </div>
                     <div class="app-form-group message">
-                      <label for="message" class="form-label-message"
+                      <label
+                        for="message"
+                        class="form-label-message"
+                        data-translate="contact_message"
                         >Message</label
                       >
                       <textarea
@@ -1073,12 +1719,14 @@
                       <button
                         class="app-form-button form-btn-reset"
                         type="reset"
+                        data-translate="contact_reset"
                       >
                         Reset
                       </button>
                       <button
                         class="app-form-button form-btn-submit"
                         type="submit"
+                        data-translate="contact_submit"
                       >
                         Submit
                       </button>
