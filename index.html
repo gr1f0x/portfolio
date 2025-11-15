@@ -145,13 +145,15 @@
           aria-hidden="true"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
-          fill="currentColor"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2.5"
+          stroke-linecap="round"
           width="24"
           height="24"
         >
-          <path
-            d="M18.3 5.71L12 12l6.3 6.29-1.42 1.42L12 14.41l-6.29 6.3-1.42-1.42L10.59 12 4.3 5.71 5.71 4.3 12 10.59l6.29-6.3z"
-          ></path>
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
         </svg>
       </button>
       <ul class="nav-links" id="nav-links">
@@ -164,78 +166,25 @@
           <a href="#contact" class="hvr-underline-from-center">Contact</a>
         </li>
         <li>
-          <div
-            class="custom-dropdown"
-            role="listbox"
-            aria-label="Language selector"
+          <button
+            class="language-trigger"
+            id="languageTrigger"
+            aria-label="Select language"
           >
-            <div
-              class="selected-option"
-              role="button"
-              aria-haspopup="listbox"
-              aria-label="Select language"
-              tabindex="0"
+            <svg
+              class="language-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="32"
+              height="32"
+              fill="currentColor"
+              aria-hidden="true"
             >
-              <svg
-                class="custom-icon"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                width="28"
-                fill="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"
-                />
-              </svg>
-            </div>
-            <ul class="options">
-              <li data-value="en" data-flag="assets/images/flags/gb.svg">
-                <img src="assets/images/flags/gb.svg" alt="flag" width="30" />
-                EN
-              </li>
-              <li data-value="es" data-flag="assets/images/flags/es.svg">
-                <img src="assets/images/flags/es.svg" alt="flag" width="30" />
-                ES
-              </li>
-              <li data-value="ca" data-flag="assets/images/flags/ca.svg">
-                <img src="assets/images/flags/ca.svg" alt="flag" width="30" />
-                CA
-              </li>
-              <li data-value="ru" data-flag="https://flagcdn.com/w40/ru.png">
-                <img
-                  src="https://flagcdn.com/w40/ru.png"
-                  alt="flag"
-                  width="30"
-                />
-                RU
-              </li>
-              <li data-value="zh" data-flag="https://flagcdn.com/w40/cn.png">
-                <img
-                  src="https://flagcdn.com/w40/cn.png"
-                  alt="flag"
-                  width="30"
-                />
-                中文
-              </li>
-              <li data-value="ja" data-flag="https://flagcdn.com/w40/jp.png">
-                <img
-                  src="https://flagcdn.com/w40/jp.png"
-                  alt="flag"
-                  width="30"
-                />
-                日本語
-              </li>
-              <li data-value="tl" data-flag="https://flagcdn.com/w40/ph.png">
-                <img
-                  src="https://flagcdn.com/w40/ph.png"
-                  alt="flag"
-                  width="30"
-                />
-                TL
-              </li>
-            </ul>
-          </div>
+              <path
+                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"
+              />
+            </svg>
+          </button>
         </li>
         <li>
           <label class="theme-toggle" title="Toggle theme">
@@ -244,8 +193,8 @@
             <svg
               xmlns="http://www.w3.org/2000/svg"
               aria-hidden="true"
-              width="2em"
-              height="2em"
+              width="42"
+              height="42"
               fill="currentColor"
               stroke-linecap="round"
               class="theme-toggle__classic"
@@ -273,8 +222,167 @@
       </ul>
     </nav>
 
+    <!-- Language Modal -->
+    <div class="language-modal" id="languageModal">
+      <div class="language-modal-overlay" id="languageModalOverlay"></div>
+      <div class="language-modal-content">
+        <div class="language-modal-header">
+          <h3 class="language-modal-title">Select Language</h3>
+          <button
+            class="language-modal-close"
+            id="languageModalClose"
+            aria-label="Close language selector"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              width="24"
+              height="24"
+            >
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+        <div class="language-search-wrapper">
+          <svg
+            class="language-search-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            width="20"
+            height="20"
+          >
+            <circle cx="11" cy="11" r="8"></circle>
+            <path d="m21 21-4.35-4.35"></path>
+          </svg>
+          <input
+            type="text"
+            class="language-search-input"
+            id="languageSearch"
+            placeholder="Search languages..."
+            autocomplete="off"
+          />
+        </div>
+        <ul class="language-list" id="languageList">
+          <li
+            data-value="ar"
+            data-flag="https://flagcdn.com/w40/sa.png"
+            data-name="Arabic"
+          >
+            <img src="https://flagcdn.com/w40/sa.png" alt="Arabic flag" />
+            <span>العربية</span>
+          </li>
+          <li
+            data-value="zh"
+            data-flag="https://flagcdn.com/w40/cn.png"
+            data-name="Chinese"
+          >
+            <img src="https://flagcdn.com/w40/cn.png" alt="Chinese flag" />
+            <span>中文</span>
+          </li>
+          <li
+            data-value="ko"
+            data-flag="https://flagcdn.com/w40/kr.png"
+            data-name="Korean"
+          >
+            <img src="https://flagcdn.com/w40/kr.png" alt="Korean flag" />
+            <span>한국어</span>
+          </li>
+          <li
+            data-value="de"
+            data-flag="https://flagcdn.com/w40/de.png"
+            data-name="German"
+          >
+            <img src="https://flagcdn.com/w40/de.png" alt="German flag" />
+            <span>Deutsch</span>
+          </li>
+          <li
+            data-value="en"
+            data-flag="assets/images/flags/gb.svg"
+            data-name="English"
+          >
+            <img src="assets/images/flags/gb.svg" alt="English flag" />
+            <span>English</span>
+          </li>
+          <li
+            data-value="es"
+            data-flag="assets/images/flags/es.svg"
+            data-name="Spanish"
+          >
+            <img src="assets/images/flags/es.svg" alt="Spanish flag" />
+            <span>Español</span>
+          </li>
+          <li
+            data-value="fr"
+            data-flag="https://flagcdn.com/w40/fr.png"
+            data-name="French"
+          >
+            <img src="https://flagcdn.com/w40/fr.png" alt="French flag" />
+            <span>Français</span>
+          </li>
+          <li
+            data-value="it"
+            data-flag="https://flagcdn.com/w40/it.png"
+            data-name="Italian"
+          >
+            <img src="https://flagcdn.com/w40/it.png" alt="Italian flag" />
+            <span>Italiano</span>
+          </li>
+          <li
+            data-value="ja"
+            data-flag="https://flagcdn.com/w40/jp.png"
+            data-name="Japanese"
+          >
+            <img src="https://flagcdn.com/w40/jp.png" alt="Japanese flag" />
+            <span>日本語</span>
+          </li>
+          <li
+            data-value="pt"
+            data-flag="https://flagcdn.com/w40/pt.png"
+            data-name="Portuguese"
+          >
+            <img src="https://flagcdn.com/w40/pt.png" alt="Portuguese flag" />
+            <span>Português</span>
+          </li>
+          <li
+            data-value="ru"
+            data-flag="https://flagcdn.com/w40/ru.png"
+            data-name="Russian"
+          >
+            <img src="https://flagcdn.com/w40/ru.png" alt="Russian flag" />
+            <span>Русский</span>
+          </li>
+          <li
+            data-value="tl"
+            data-flag="https://flagcdn.com/w40/ph.png"
+            data-name="Tagalog"
+          >
+            <img src="https://flagcdn.com/w40/ph.png" alt="Tagalog flag" />
+            <span>Tagalog</span>
+          </li>
+          <li
+            data-value="ca"
+            data-flag="assets/images/flags/ca.svg"
+            data-name="Catalan"
+          >
+            <img src="assets/images/flags/ca.svg" alt="Catalan flag" />
+            <span>Català</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
     <main>
-      <div class="hero">
+      <div class="hero" id="home">
         <div class="hero-glassmorphism">
           <div class="hero-content" data-aos="fade-down">
             <div class="availability">
@@ -372,23 +480,6 @@
             <div class="stat-icon">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 640 512"
-                width="40"
-                height="40"
-                fill="currentColor"
-              >
-                <path
-                  d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"
-                />
-              </svg>
-            </div>
-            <div class="stat-number" data-target="3">0</div>
-            <div class="stat-label stat-projects">Projects Completed</div>
-          </div>
-          <div class="stat-item">
-            <div class="stat-icon">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 512 512"
                 width="40"
                 height="40"
@@ -416,7 +507,24 @@
                 />
               </svg>
             </div>
-            <div class="stat-number" data-target="10">0</div>
+            <div class="stat-number" data-target="11">0</div>
+            <div class="stat-label stat-projects">Projects Completed</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 640 512"
+                width="40"
+                height="40"
+                fill="currentColor"
+              >
+                <path
+                  d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"
+                />
+              </svg>
+            </div>
+            <div class="stat-number" data-target="20">0</div>
             <div class="stat-label stat-technologies">Technologies</div>
           </div>
           <div class="stat-item">

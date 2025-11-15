@@ -59,10 +59,13 @@ closeBtn.addEventListener("click", () => {
 const navLinksItems = navLinks.querySelectorAll("a");
 navLinksItems.forEach((link) => {
   link.addEventListener("click", () => {
-    navLinks.classList.remove("active");
-    closeBtn.style.display = "none";
-    hamburger.style.display = "block";
-    updateAriaExpanded(false);
+    // Solo cerrar el menú móvil si está visible
+    if (window.innerWidth <= 768) {
+      navLinks.classList.remove("active");
+      closeBtn.style.display = "none";
+      hamburger.style.display = "block";
+      updateAriaExpanded(false);
+    }
   });
 });
 
@@ -101,29 +104,72 @@ function updateThem() {
   }
 }
 
-const languageDropdown = document.querySelector(".custom-dropdown");
+// Language Modal System
+const languageTrigger = document.getElementById("languageTrigger");
+const languageModal = document.getElementById("languageModal");
+const languageModalOverlay = document.getElementById("languageModalOverlay");
+const languageModalClose = document.getElementById("languageModalClose");
+const languageSearch = document.getElementById("languageSearch");
+const languageList = document.getElementById("languageList");
+const languageOptions = document.querySelectorAll(".language-list li");
 
-languageDropdown.addEventListener("click", (e) => {
-  e.stopPropagation();
-  languageDropdown.classList.toggle("open");
+// Open modal
+languageTrigger.addEventListener("click", () => {
+  languageModal.classList.add("active");
+  document.body.style.overflow = "hidden";
+  setTimeout(() => {
+    languageSearch.focus();
+  }, 100);
 });
 
-document.addEventListener("click", () => {
-  languageDropdown.classList.remove("open");
+// Close modal functions
+const closeLanguageModal = () => {
+  languageModal.classList.remove("active");
+  document.body.style.overflow = "";
+  languageSearch.value = "";
+  // Show all languages
+  languageOptions.forEach((option) => {
+    option.classList.remove("hidden");
+  });
+};
+
+languageModalClose.addEventListener("click", closeLanguageModal);
+languageModalOverlay.addEventListener("click", closeLanguageModal);
+
+// Close on Escape key
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape" && languageModal.classList.contains("active")) {
+    closeLanguageModal();
+  }
 });
 
-// Sistema de idiomas
-const languageOptions = document.querySelectorAll(".options li");
+// Search functionality
+languageSearch.addEventListener("input", (e) => {
+  const searchTerm = e.target.value.toLowerCase().trim();
+
+  languageOptions.forEach((option) => {
+    const langName = option.getAttribute("data-name").toLowerCase();
+    const langText = option.querySelector("span").textContent.toLowerCase();
+    const langValue = option.getAttribute("data-value").toLowerCase();
+
+    if (
+      langName.includes(searchTerm) ||
+      langText.includes(searchTerm) ||
+      langValue.includes(searchTerm)
+    ) {
+      option.classList.remove("hidden");
+    } else {
+      option.classList.add("hidden");
+    }
+  });
+});
+
+// Language selection
 languageOptions.forEach((option) => {
-  option.addEventListener("click", (e) => {
-    e.stopPropagation();
+  option.addEventListener("click", () => {
     const lang = option.getAttribute("data-value");
-
-    // Cambiar idioma sin cambiar el icono
     changeLanguage(lang);
-
-    // Cerrar dropdown
-    languageDropdown.classList.remove("open");
+    closeLanguageModal();
   });
 });
 

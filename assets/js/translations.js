@@ -10,7 +10,7 @@ const translations = {
     available: "Available To Work",
     location: "Barcelona, Spain",
     hero_title: "I'm",
-    hero_typing: "Full Stack Dev.",
+    hero_typing: "Full Stack Developer.",
 
     // Projects
     projects_title: "Projects",
@@ -578,6 +578,478 @@ const translations = {
 
     // Footer
     footer_rights: "Lahat ng karapatan ay nakalaan",
+  },
+
+  fr: {
+    // Navbar
+    nav_home: "Accueil",
+    nav_projects: "Projets",
+    nav_about: "À Propos",
+    nav_contact: "Contact",
+
+    // Hero
+    available: "Disponible pour Travailler",
+    location: "Barcelone, Espagne",
+    hero_title: "Je suis",
+    hero_typing: "Développeur Full Stack.",
+
+    // Projects
+    projects_title: "Projets",
+    project1_title: "Memory PokeAPI",
+    project1_desc:
+      "Un jeu de mémoire sur le thème Pokémon, développé avec PokeAPI pour récupérer les données Pokémon et Firebase pour l'authentification et le stockage des données.",
+    project2_title: "Amego Kebab",
+    project2_desc:
+      "Référentiel pour le site Amego Kebab, comprenant page d'accueil, menu, panier et pages de contact, avec support multilingue et intégration JavaScript et TypeScript.",
+    project3_title: "Roulette",
+    project3_desc:
+      "LaSalleBet est un casino en ligne proposant une page principale et un jeu de roulette interactif, permettant aux utilisateurs de placer des paris, gérer des jetons et profiter d'une expérience immersive.",
+    project_github: "Github",
+
+    // About
+    about_title: "À Propos de Moi",
+    about_text:
+      "Développeur web avec une solide expérience en support technique et spécialisation dans des technologies comme HTML, CSS, Java et C#.<br><br>J'ai également des connaissances de base en JavaScript, TypeScript, PHP et Python, me permettant d'aborder les projets sous différents angles. Je me distingue par ma capacité à m'adapter rapidement aux nouveaux environnements et technologies.<br><br>Ma formation comprend un diplôme professionnel en Systèmes Micro-informatiques et Réseaux, et je suis actuellement en formation supérieure en Développement d'Applications Web. J'ai également une expérience pratique avec des outils comme SQL Server (MySQL) et GIT.",
+
+    // CTA
+    cta_title: "Vous avez un projet?",
+    cta_subtitle: "Travaillons dessus",
+    cta_button: "Me Contacter",
+
+    // Stats
+    stats_projects: "Projets Terminés",
+    stats_experience: "Années d'Expérience",
+    stats_technologies: "Technologies",
+    stats_dedication: "% Dévouement",
+
+    // Skills
+    skills_title: "Stack Technique",
+    skills_subtitle: "Mes Compétences Techniques",
+    skills_programming: "Compétences en Programmation",
+    skills_designing: "Compétences en Design",
+    frontend: "Frontend",
+    backend: "Backend",
+    tools: "Outils et Autres",
+
+    // Education
+    education_title: "Formation",
+    timeline1_title: "Diplôme ESO",
+    timeline1_desc:
+      "Diplômé de Vedruna Angels, achevant l'enseignement secondaire obligatoire.",
+    timeline2_title: "Technicien en Systèmes Micro-informatiques et Réseaux",
+    timeline2_desc:
+      "Obtenu à La Salle Barceloneta, axé sur les systèmes informatiques, les réseaux et le support technique.",
+    timeline3_title: "Technicien Supérieur en Développement d'Applications Web",
+    timeline3_desc:
+      "Actuellement en formation à La Salle Gracia, spécialisation en développement web, bases de données et génie logiciel.",
+
+    // Contact
+    contact_title: "Contact",
+    contact_header_title: "Se Connecter",
+    contact_header_subtitle: "Laissez un message!",
+    contact_name: "Nom Complet",
+    contact_email: "Email",
+    contact_phone: "Numéro de Contact",
+    contact_subject: "Sujet",
+    contact_message: "Message",
+    contact_reset: "Réinitialiser",
+    contact_submit: "Envoyer",
+
+    // Footer
+    footer_rights: "Tous droits réservés",
+  },
+
+  de: {
+    // Navbar
+    nav_home: "Startseite",
+    nav_projects: "Projekte",
+    nav_about: "Über Mich",
+    nav_contact: "Kontakt",
+
+    // Hero
+    available: "Verfügbar für Arbeit",
+    location: "Barcelona, Spanien",
+    hero_title: "Ich bin",
+    hero_typing: "Full Stack Entwickler.",
+
+    // Projects
+    projects_title: "Projekte",
+    project1_title: "Memory PokeAPI",
+    project1_desc:
+      "Ein Pokémon-Memory-Spiel, entwickelt mit PokeAPI zum Abrufen von Pokémon-Daten und Firebase für Authentifizierung und Datenspeicherung.",
+    project2_title: "Amego Kebab",
+    project2_desc:
+      "Repository für die Amego Kebab Website mit Startseite, Menü, Warenkorb und Kontaktseiten, mit mehrsprachiger Unterstützung und Integration von JavaScript und TypeScript.",
+    project3_title: "Roulette",
+    project3_desc:
+      "LaSalleBet ist ein webbasiertes Online-Casino mit einer Hauptseite und einem interaktiven Roulette-Spiel, das es Benutzern ermöglicht, Wetten zu platzieren, Chips zu verwalten und ein immersives Erlebnis zu genießen.",
+    project_github: "Github",
+
+    // About
+    about_title: "Über Mich",
+    about_text:
+      "Webentwickler mit solider Erfahrung im technischen Support und Spezialisierung auf Technologien wie HTML, CSS, Java und C#.<br><br>Ich habe auch Grundkenntnisse in Sprachen wie JavaScript, TypeScript, PHP und Python, die es mir ermöglichen, Projekte aus verschiedenen Perspektiven anzugehen. Ich zeichne mich durch meine Fähigkeit aus, mich schnell an neue Umgebungen und Technologien anzupassen.<br><br>Meine Ausbildung umfasst eine Berufsqualifikation in Mikrocomputersystemen und Netzwerken, und ich studiere derzeit einen höheren Kurs in Webanwendungsentwicklung. Ich habe auch praktische Erfahrung mit Tools wie SQL Server (MySQL) und GIT.",
+
+    // CTA
+    cta_title: "Haben Sie ein Projekt?",
+    cta_subtitle: "Lassen Sie uns daran arbeiten",
+    cta_button: "Kontaktieren Sie Mich",
+
+    // Stats
+    stats_projects: "Abgeschlossene Projekte",
+    stats_experience: "Jahre Erfahrung",
+    stats_technologies: "Technologien",
+    stats_dedication: "% Hingabe",
+
+    // Skills
+    skills_title: "Tech Stack",
+    skills_subtitle: "Meine Technischen Fähigkeiten",
+    skills_programming: "Programmierfähigkeiten",
+    skills_designing: "Designfähigkeiten",
+    frontend: "Frontend",
+    backend: "Backend",
+    tools: "Tools & Andere",
+
+    // Education
+    education_title: "Ausbildung",
+    timeline1_title: "ESO Diplom",
+    timeline1_desc:
+      "Abschluss an Vedruna Angels, Abschluss der obligatorischen Sekundarschulbildung.",
+    timeline2_title: "Techniker für Mikrocomputersysteme und Netzwerke",
+    timeline2_desc:
+      "Erworben an La Salle Barceloneta, mit Fokus auf IT-Systeme, Netzwerke und technischen Support.",
+    timeline3_title: "Obertechniker für Webanwendungsentwicklung",
+    timeline3_desc:
+      "Studiere derzeit an La Salle Gracia, Spezialisierung auf Webentwicklung, Datenbanken und Software-Engineering.",
+
+    // Contact
+    contact_title: "Kontakt",
+    contact_header_title: "Verbinden",
+    contact_header_subtitle: "Hinterlassen Sie eine Nachricht!",
+    contact_name: "Vollständiger Name",
+    contact_email: "E-Mail",
+    contact_phone: "Kontaktnummer",
+    contact_subject: "Betreff",
+    contact_message: "Nachricht",
+    contact_reset: "Zurücksetzen",
+    contact_submit: "Senden",
+
+    // Footer
+    footer_rights: "Alle Rechte vorbehalten",
+  },
+
+  it: {
+    // Navbar
+    nav_home: "Home",
+    nav_projects: "Progetti",
+    nav_about: "Chi Sono",
+    nav_contact: "Contatti",
+
+    // Hero
+    available: "Disponibile per Lavoro",
+    location: "Barcellona, Spagna",
+    hero_title: "Sono",
+    hero_typing: "Sviluppatore Full Stack.",
+
+    // Projects
+    projects_title: "Progetti",
+    project1_title: "Memory PokeAPI",
+    project1_desc:
+      "Un gioco di memoria a tema Pokémon, sviluppato utilizzando PokeAPI per recuperare i dati Pokémon e Firebase per autenticazione e archiviazione dati.",
+    project2_title: "Amego Kebab",
+    project2_desc:
+      "Repository per il sito Amego Kebab, con homepage, menu, carrello e pagine di contatto, con supporto multilingue e integrazione di JavaScript e TypeScript.",
+    project3_title: "Roulette",
+    project3_desc:
+      "LaSalleBet è un casinò online basato sul web con una pagina principale e un gioco di roulette interattivo, che consente agli utenti di piazzare scommesse, gestire fiches e godere di un'esperienza coinvolgente.",
+    project_github: "Github",
+
+    // About
+    about_title: "Chi Sono",
+    about_text:
+      "Sviluppatore web con solida esperienza nel supporto tecnico e specializzazione in tecnologie come HTML, CSS, Java e C#.<br><br>Ho anche conoscenze di base in linguaggi come JavaScript, TypeScript, PHP e Python, che mi permettono di affrontare i progetti da diverse prospettive. Mi distinguo per la mia capacità di adattarmi rapidamente a nuovi ambienti e tecnologie.<br><br>La mia formazione include una qualifica professionale in Sistemi Microinformatici e Reti, e attualmente sto studiando un corso di livello superiore in Sviluppo di Applicazioni Web. Ho anche esperienza pratica con strumenti come SQL Server (MySQL) e GIT.",
+
+    // CTA
+    cta_title: "Hai un progetto?",
+    cta_subtitle: "Lavoriamoci insieme",
+    cta_button: "Contattami",
+
+    // Stats
+    stats_projects: "Progetti Completati",
+    stats_experience: "Anni di Esperienza",
+    stats_technologies: "Tecnologie",
+    stats_dedication: "% Dedizione",
+
+    // Skills
+    skills_title: "Stack Tecnologico",
+    skills_subtitle: "Le Mie Competenze Tecniche",
+    skills_programming: "Competenze di Programmazione",
+    skills_designing: "Competenze di Design",
+    frontend: "Frontend",
+    backend: "Backend",
+    tools: "Strumenti e Altro",
+
+    // Education
+    education_title: "Formazione",
+    timeline1_title: "Diploma ESO",
+    timeline1_desc:
+      "Diplomato presso Vedruna Angels, completando l'istruzione secondaria obbligatoria.",
+    timeline2_title: "Tecnico in Sistemi Microinformatici e Reti",
+    timeline2_desc:
+      "Conseguito presso La Salle Barceloneta, incentrato su sistemi IT, networking e supporto tecnico.",
+    timeline3_title: "Tecnico Superiore in Sviluppo di Applicazioni Web",
+    timeline3_desc:
+      "Attualmente studio presso La Salle Gracia, specializzandomi in sviluppo web, database e ingegneria del software.",
+
+    // Contact
+    contact_title: "Contatti",
+    contact_header_title: "Connettiti",
+    contact_header_subtitle: "Lascia un messaggio!",
+    contact_name: "Nome Completo",
+    contact_email: "Email",
+    contact_phone: "Numero di Contatto",
+    contact_subject: "Oggetto",
+    contact_message: "Messaggio",
+    contact_reset: "Ripristina",
+    contact_submit: "Invia",
+
+    // Footer
+    footer_rights: "Tutti i diritti riservati",
+  },
+
+  pt: {
+    // Navbar
+    nav_home: "Início",
+    nav_projects: "Projetos",
+    nav_about: "Sobre",
+    nav_contact: "Contato",
+
+    // Hero
+    available: "Disponível para Trabalhar",
+    location: "Barcelona, Espanha",
+    hero_title: "Eu sou",
+    hero_typing: "Desenvolvedor Full Stack.",
+
+    // Projects
+    projects_title: "Projetos",
+    project1_title: "Memory PokeAPI",
+    project1_desc:
+      "Um jogo de memória com tema Pokémon, desenvolvido usando PokeAPI para buscar dados de Pokémon e Firebase para autenticação e armazenamento de dados.",
+    project2_title: "Amego Kebab",
+    project2_desc:
+      "Repositório para o site Amego Kebab, com página inicial, menu, carrinho de compras e páginas de contato, com suporte multilíngue e integração de JavaScript e TypeScript.",
+    project3_title: "Roulette",
+    project3_desc:
+      "LaSalleBet é um cassino online baseado na web com uma página principal e um jogo de roleta interativo, permitindo que os usuários façam apostas, gerenciem fichas e desfrutem de uma experiência imersiva.",
+    project_github: "Github",
+
+    // About
+    about_title: "Sobre Mim",
+    about_text:
+      "Desenvolvedor web com sólida experiência em suporte técnico e especialização em tecnologias como HTML, CSS, Java e C#.<br><br>Também tenho conhecimentos básicos em linguagens como JavaScript, TypeScript, PHP e Python, permitindo-me abordar projetos de várias perspectivas. Destaco-me pela minha capacidade de me adaptar rapidamente a novos ambientes e tecnologias.<br><br>Minha formação inclui qualificação profissional em Sistemas de Microcomputadores e Redes, e atualmente estou estudando um curso de nível superior em Desenvolvimento de Aplicações Web. Também tenho experiência prática com ferramentas como SQL Server (MySQL) e GIT.",
+
+    // CTA
+    cta_title: "Tem algum projeto?",
+    cta_subtitle: "Vamos trabalhar nele",
+    cta_button: "Entre em Contato",
+
+    // Stats
+    stats_projects: "Projetos Concluídos",
+    stats_experience: "Anos de Experiência",
+    stats_technologies: "Tecnologias",
+    stats_dedication: "% Dedicação",
+
+    // Skills
+    skills_title: "Stack Tecnológico",
+    skills_subtitle: "Minhas Habilidades Técnicas",
+    skills_programming: "Habilidades de Programação",
+    skills_designing: "Habilidades de Design",
+    frontend: "Frontend",
+    backend: "Backend",
+    tools: "Ferramentas e Outros",
+
+    // Education
+    education_title: "Formação",
+    timeline1_title: "Diploma ESO",
+    timeline1_desc:
+      "Graduado em Vedruna Angels, concluindo o ensino secundário obrigatório.",
+    timeline2_title: "Técnico em Sistemas de Microcomputadores e Redes",
+    timeline2_desc:
+      "Obtido em La Salle Barceloneta, focando em sistemas de TI, redes e suporte técnico.",
+    timeline3_title: "Técnico Superior em Desenvolvimento de Aplicações Web",
+    timeline3_desc:
+      "Atualmente estudando em La Salle Gracia, especializando-me em desenvolvimento web, bancos de dados e engenharia de software.",
+
+    // Contact
+    contact_title: "Contato",
+    contact_header_title: "Conectar",
+    contact_header_subtitle: "Deixe uma mensagem!",
+    contact_name: "Nome Completo",
+    contact_email: "Email",
+    contact_phone: "Número de Contato",
+    contact_subject: "Assunto",
+    contact_message: "Mensagem",
+    contact_reset: "Redefinir",
+    contact_submit: "Enviar",
+
+    // Footer
+    footer_rights: "Todos os direitos reservados",
+  },
+
+  ko: {
+    // Navbar
+    nav_home: "홈",
+    nav_projects: "프로젝트",
+    nav_about: "소개",
+    nav_contact: "연락처",
+
+    // Hero
+    available: "작업 가능",
+    location: "바르셀로나, 스페인",
+    hero_title: "저는",
+    hero_typing: "풀스택 개발자입니다.",
+
+    // Projects
+    projects_title: "프로젝트",
+    project1_title: "Memory PokeAPI",
+    project1_desc:
+      "PokeAPI를 사용하여 포켓몬 데이터를 가져오고 Firebase를 사용하여 인증 및 데이터 저장을 처리하는 포켓몬 테마 메모리 게임입니다.",
+    project2_title: "Amego Kebab",
+    project2_desc:
+      "홈페이지, 메뉴, 장바구니 및 연락처 페이지가 포함된 Amego Kebab 웹사이트용 저장소로, 다국어 지원 및 JavaScript와 TypeScript 통합이 있습니다.",
+    project3_title: "Roulette",
+    project3_desc:
+      "LaSalleBet은 메인 페이지와 인터랙티브한 룰렛 게임을 제공하는 웹 기반 온라인 카지노로, 사용자가 베팅하고 칩을 관리하며 몰입형 경험을 즐길 수 있습니다.",
+    project_github: "Github",
+
+    // About
+    about_title: "소개",
+    about_text:
+      "HTML, CSS, Java, C#와 같은 기술을 전문으로 하는 기술 지원 분야에서 탄탄한 경험을 가진 웹 개발자입니다.<br><br>또한 JavaScript, TypeScript, PHP, Python과 같은 언어에 대한 기본 지식을 가지고 있어 다양한 관점에서 프로젝트에 접근할 수 있습니다. 새로운 환경과 기술에 빠르게 적응하는 능력으로 두각을 나타냅니다.<br><br>제 교육에는 마이크로컴퓨터 시스템 및 네트워크에 대한 직업 자격이 포함되어 있으며, 현재 웹 애플리케이션 개발 고급 과정을 공부하고 있습니다. 또한 SQL Server(MySQL) 및 GIT와 같은 도구에 대한 실무 경험이 있습니다.",
+
+    // CTA
+    cta_title: "프로젝트가 있으신가요?",
+    cta_subtitle: "함께 작업해요",
+    cta_button: "연락하기",
+
+    // Stats
+    stats_projects: "완료된 프로젝트",
+    stats_experience: "년 경력",
+    stats_technologies: "기술",
+    stats_dedication: "% 헌신",
+
+    // Skills
+    skills_title: "기술 스택",
+    skills_subtitle: "기술 능력",
+    skills_programming: "프로그래밍 기술",
+    skills_designing: "디자인 기술",
+    frontend: "프론트엔드",
+    backend: "백엔드",
+    tools: "도구 및 기타",
+
+    // Education
+    education_title: "학력",
+    timeline1_title: "ESO 졸업장",
+    timeline1_desc: "Vedruna Angels에서 졸업하여 의무 중등 교육을 마쳤습니다.",
+    timeline2_title: "마이크로컴퓨터 시스템 및 네트워크 기술자",
+    timeline2_desc:
+      "La Salle Barceloneta에서 취득, IT 시스템, 네트워킹 및 기술 지원에 중점을 둡니다.",
+    timeline3_title: "웹 애플리케이션 개발 고급 기술자",
+    timeline3_desc:
+      "현재 La Salle Gracia에서 공부 중이며 웹 개발, 데이터베이스 및 소프트웨어 엔지니어링을 전공하고 있습니다.",
+
+    // Contact
+    contact_title: "연락처",
+    contact_header_title: "연결",
+    contact_header_subtitle: "메시지를 남겨주세요!",
+    contact_name: "전체 이름",
+    contact_email: "이메일",
+    contact_phone: "연락처 번호",
+    contact_subject: "제목",
+    contact_message: "메시지",
+    contact_reset: "재설정",
+    contact_submit: "제출",
+
+    // Footer
+    footer_rights: "모든 권리 보유",
+  },
+
+  ar: {
+    // Navbar
+    nav_home: "الرئيسية",
+    nav_projects: "المشاريع",
+    nav_about: "نبذة عني",
+    nav_contact: "اتصل بي",
+
+    // Hero
+    available: "متاح للعمل",
+    location: "برشلونة، إسبانيا",
+    hero_title: "أنا",
+    hero_typing: "مطور ويب متكامل.",
+
+    // Projects
+    projects_title: "المشاريع",
+    project1_title: "Memory PokeAPI",
+    project1_desc:
+      "لعبة ذاكرة بموضوع بوكيمون، تم تطويرها باستخدام PokeAPI لجلب بيانات بوكيمون وFirebase للمصادقة وتخزين البيانات.",
+    project2_title: "Amego Kebab",
+    project2_desc:
+      "مستودع لموقع Amego Kebab، يتضمن الصفحة الرئيسية والقائمة وسلة التسوق وصفحات الاتصال، مع دعم متعدد اللغات ودمج JavaScript وTypeScript.",
+    project3_title: "Roulette",
+    project3_desc:
+      "LaSalleBet هو كازينو على الإنترنت يحتوي على صفحة رئيسية ولعبة روليت تفاعلية، مما يسمح للمستخدمين بوضع الرهانات وإدارة الرقائق والاستمتاع بتجربة غامرة.",
+    project_github: "Github",
+
+    // About
+    about_title: "نبذة عني",
+    about_text:
+      "مطور ويب ذو خبرة قوية في الدعم الفني والتخصص في تقنيات مثل HTML وCSS وJava وC#.<br><br>لدي أيضًا معرفة أساسية بلغات مثل JavaScript وTypeScript وPHP وPython، مما يسمح لي بمعالجة المشاريع من وجهات نظر مختلفة. أتميز بقدرتي على التكيف بسرعة مع البيئات والتقنيات الجديدة.<br><br>يشمل تعليمي مؤهلاً مهنياً في أنظمة الحواسيب الصغيرة والشبكات، وأدرس حالياً دورة عالية المستوى في تطوير تطبيقات الويب. لدي أيضًا خبرة عملية مع أدوات مثل SQL Server (MySQL) وGIT.",
+
+    // CTA
+    cta_title: "هل لديك مشروع؟",
+    cta_subtitle: "دعنا نعمل عليه",
+    cta_button: "اتصل بي",
+
+    // Stats
+    stats_projects: "المشاريع المنجزة",
+    stats_experience: "سنوات الخبرة",
+    stats_technologies: "التقنيات",
+    stats_dedication: "% التفاني",
+
+    // Skills
+    skills_title: "التقنيات",
+    skills_subtitle: "مهاراتي التقنية",
+    skills_programming: "مهارات البرمجة",
+    skills_designing: "مهارات التصميم",
+    frontend: "الواجهة الأمامية",
+    backend: "الواجهة الخلفية",
+    tools: "الأدوات وأخرى",
+
+    // Education
+    education_title: "التعليم",
+    timeline1_title: "دبلوم ESO",
+    timeline1_desc: "تخرجت من Vedruna Angels، بإكمال التعليم الثانوي الإلزامي.",
+    timeline2_title: "فني في أنظمة الحواسيب الصغيرة والشبكات",
+    timeline2_desc:
+      "تم الحصول عليها في La Salle Barceloneta، مع التركيز على أنظمة تكنولوجيا المعلومات والشبكات والدعم الفني.",
+    timeline3_title: "فني عالي في تطوير تطبيقات الويب",
+    timeline3_desc:
+      "أدرس حالياً في La Salle Gracia، متخصص في تطوير الويب وقواعد البيانات وهندسة البرمجيات.",
+
+    // Contact
+    contact_title: "اتصل",
+    contact_header_title: "تواصل",
+    contact_header_subtitle: "اترك رسالة!",
+    contact_name: "الاسم الكامل",
+    contact_email: "البريد الإلكتروني",
+    contact_phone: "رقم الهاتف",
+    contact_subject: "الموضوع",
+    contact_message: "الرسالة",
+    contact_reset: "إعادة تعيين",
+    contact_submit: "إرسال",
+
+    // Footer
+    footer_rights: "جميع الحقوق محفوظة",
   },
 };
 
