@@ -30,6 +30,14 @@ const translations = {
     // About
     about_title: "About Me",
     about_subtitle: "Passionate developer building innovative solutions",
+    about_greeting: "👋 Hello, I'm",
+    about_role: "Full Stack Developer",
+    about_highlight_experience_label: "Experience",
+    about_highlight_experience_value: "2 Years",
+    about_highlight_projects_label: "Projects",
+    about_highlight_projects_value: "11 Completed",
+    about_highlight_focus_label: "Focus",
+    about_highlight_focus_value: "Web Development",
     about_text:
       "Web developer with solid experience in technical support and specialization in technologies like HTML, CSS, Java, and C#.<br><br>I also have basic knowledge in languages such as JavaScript, TypeScript, PHP, and Python, allowing me to approach projects from various perspectives. I stand out for my ability to quickly adapt to new environments and technologies.<br><br>My education includes a vocational qualification in Microcomputer Systems and Networks, and I am currently studying a higher-level course in Web Application Development. I also have practical experience with tools like SQL Server (MySQL) and GIT, which enhance my technical skills.",
 
@@ -150,8 +158,23 @@ const translations = {
     contact_message: "Message",
     contact_reset: "Reset",
     contact_submit: "Submit",
+    contact_placeholder_name: "John Doe",
+    contact_placeholder_email: "john@example.com",
+    contact_placeholder_phone: "+44 20 1234 5678",
+    contact_placeholder_subject: "Project collaboration",
+    contact_placeholder_message: "Tell me about your project...",
 
     // Footer
+    footer_description:
+      "Full Stack Developer passionate about creating innovative web solutions.",
+    footer_quick_links: "Quick Links",
+    footer_contact_title: "Contact",
+    footer_years: "Years",
+    footer_projects_count: "Projects",
+    footer_technologies: "Technologies",
+    footer_hire_me: "Let's Work Together",
+    footer_made_with: "Made with",
+    footer_in: "in",
     footer_rights: "All rights reserved",
   },
 
@@ -187,6 +210,14 @@ const translations = {
     // About
     about_title: "Sobre Mí",
     about_subtitle: "Desarrollador apasionado creando soluciones innovadoras",
+    about_greeting: "👋 Hola, soy",
+    about_role: "Desarrollador Full Stack",
+    about_highlight_experience_label: "Experiencia",
+    about_highlight_experience_value: "2 Años",
+    about_highlight_projects_label: "Proyectos",
+    about_highlight_projects_value: "11 Completados",
+    about_highlight_focus_label: "Enfoque",
+    about_highlight_focus_value: "Desarrollo Web",
     about_text:
       "Desarrollador web con sólida experiencia en soporte técnico y especialización en tecnologías como HTML, CSS, Java y C#.<br><br>También tengo conocimientos básicos en lenguajes como JavaScript, TypeScript, PHP y Python, lo que me permite abordar proyectos desde diversas perspectivas. Destaco por mi capacidad de adaptación rápida a nuevos entornos y tecnologías.<br><br>Mi formación incluye un título de formación profesional en Sistemas Microinformáticos y Redes, y actualmente estoy estudiando un curso de grado superior en Desarrollo de Aplicaciones Web. También tengo experiencia práctica con herramientas como SQL Server (MySQL) y GIT, que mejoran mis habilidades técnicas.",
 
@@ -308,8 +339,23 @@ const translations = {
     contact_message: "Mensaje",
     contact_reset: "Restablecer",
     contact_submit: "Enviar",
+    contact_placeholder_name: "Juan Pérez",
+    contact_placeholder_email: "juan@ejemplo.com",
+    contact_placeholder_phone: "+34 123 456 789",
+    contact_placeholder_subject: "Colaboración en proyecto",
+    contact_placeholder_message: "Cuéntame sobre tu proyecto...",
 
     // Footer
+    footer_description:
+      "Desarrollador Full Stack apasionado por crear soluciones web innovadoras.",
+    footer_quick_links: "Enlaces Rápidos",
+    footer_contact_title: "Contacto",
+    footer_years: "Años",
+    footer_projects_count: "Proyectos",
+    footer_technologies: "Tecnologías",
+    footer_hire_me: "Trabajemos Juntos",
+    footer_made_with: "Hecho con",
+    footer_in: "en",
     footer_rights: "Todos los derechos reservados",
   },
 
@@ -345,6 +391,14 @@ const translations = {
     // About
     about_title: "Sobre Mi",
     about_subtitle: "Desenvolupador apassionat creant solucions innovadores",
+    about_greeting: "👋 Hola, sóc",
+    about_role: "Desenvolupador Full Stack",
+    about_highlight_experience_label: "Experiència",
+    about_highlight_experience_value: "2 Anys",
+    about_highlight_projects_label: "Projectes",
+    about_highlight_projects_value: "11 Completats",
+    about_highlight_focus_label: "Focus",
+    about_highlight_focus_value: "Desenvolupament Web",
     about_text:
       "Desenvolupador web amb sòlida experiència en suport tècnic i especialització en tecnologies com HTML, CSS, Java i C#.<br><br>També tinc coneixements bàsics en llenguatges com JavaScript, TypeScript, PHP i Python, que em permeten abordar projectes des de diverses perspectives. Destaco per la meva capacitat d'adaptació ràpida a nous entorns i tecnologies.<br><br>La meva formació inclou un títol de formació professional en Sistemes Microinformàtics i Xarxes, i actualment estic estudiant un curs de grau superior en Desenvolupament d'Aplicacions Web. També tinc experiència pràctica amb eines com SQL Server (MySQL) i GIT, que milloren les meves habilitats tècniques.",
 
@@ -465,8 +519,23 @@ const translations = {
     contact_message: "Missatge",
     contact_reset: "Restablir",
     contact_submit: "Enviar",
+    contact_placeholder_name: "Joan Pérez",
+    contact_placeholder_email: "joan@exemple.com",
+    contact_placeholder_phone: "+34 123 456 789",
+    contact_placeholder_subject: "Col·laboració en projecte",
+    contact_placeholder_message: "Explica'm sobre el teu projecte...",
 
     // Footer
+    footer_description:
+      "Desenvolupador Full Stack apassionat per crear solucions web innovadores.",
+    footer_quick_links: "Enllaços Ràpids",
+    footer_contact_title: "Contacte",
+    footer_years: "Anys",
+    footer_projects_count: "Projectes",
+    footer_technologies: "Tecnologies",
+    footer_hire_me: "Treballem Junts",
+    footer_made_with: "Fet amb",
+    footer_in: "a",
     footer_rights: "Tots els drets reservats",
   },
 
@@ -502,6 +571,14 @@ const translations = {
     // About
     about_title: "Обо мне",
     about_subtitle: "Страстный разработчик, создающий инновационные решения",
+    about_greeting: "👋 Привет, я",
+    about_role: "Full Stack разработчик",
+    about_highlight_experience_label: "Опыт",
+    about_highlight_experience_value: "2 Года",
+    about_highlight_projects_label: "Проекты",
+    about_highlight_projects_value: "11 Завершено",
+    about_highlight_focus_label: "Фокус",
+    about_highlight_focus_value: "Веб-разработка",
     about_text:
       "Веб-разработчик с солидным опытом в технической поддержке и специализацией в таких технологиях, как HTML, CSS, Java и C#.<br><br>Также имею базовые знания в таких языках, как JavaScript, TypeScript, PHP и Python, что позволяет мне подходить к проектам с различных точек зрения. Выделяюсь способностью быстро адаптироваться к новым средам и технологиям.<br><br>Моё образование включает профессиональное образование в области микрокомпьютерных систем и сетей, и в настоящее время я изучаю курс высшего уровня по разработке веб-приложений. Также имею практический опыт работы с такими инструментами, как SQL Server (MySQL) и GIT, которые улучшают мои технические навыки.",
 
@@ -615,8 +692,23 @@ const translations = {
     contact_message: "Сообщение",
     contact_reset: "Сбросить",
     contact_submit: "Отправить",
+    contact_placeholder_name: "Иван Иванов",
+    contact_placeholder_email: "ivan@example.com",
+    contact_placeholder_phone: "+7 123 456 7890",
+    contact_placeholder_subject: "Сотрудничество по проекту",
+    contact_placeholder_message: "Расскажите о вашем проекте...",
 
     // Footer
+    footer_description:
+      "Full Stack разработчик, увлеченный созданием инновационных веб-решений.",
+    footer_quick_links: "Быстрые ссылки",
+    footer_contact_title: "Контакт",
+    footer_years: "Лет",
+    footer_projects_count: "Проектов",
+    footer_technologies: "Технологий",
+    footer_hire_me: "Давайте Работать Вместе",
+    footer_made_with: "Сделано с",
+    footer_in: "в",
     footer_rights: "Все права защищены",
   },
 
@@ -651,6 +743,14 @@ const translations = {
     // About
     about_title: "关于我",
     about_subtitle: "热情的开发者，构建创新解决方案",
+    about_greeting: "👋 你好，我是",
+    about_role: "全栈开发者",
+    about_highlight_experience_label: "经验",
+    about_highlight_experience_value: "2年",
+    about_highlight_projects_label: "项目",
+    about_highlight_projects_value: "完成11个",
+    about_highlight_focus_label: "专注",
+    about_highlight_focus_value: "网页开发",
     about_text:
       "具有丰富技术支持经验的网页开发者，专注于HTML、CSS、Java和C#等技术。<br><br>我还具备JavaScript、TypeScript、PHP和Python等语言的基础知识，这使我能够从多个角度处理项目。我以能够快速适应新环境和新技术而著称。<br><br>我的教育背景包括微型计算机系统和网络的职业资格，目前正在学习网页应用开发的高级课程。我还具有SQL Server (MySQL)和GIT等工具的实践经验，这些都提升了我的技术能力。",
 
@@ -769,8 +869,22 @@ const translations = {
     contact_message: "消息",
     contact_reset: "重置",
     contact_submit: "提交",
+    contact_placeholder_name: "张三",
+    contact_placeholder_email: "zhang@example.com",
+    contact_placeholder_phone: "+86 123 456 7890",
+    contact_placeholder_subject: "项目合作",
+    contact_placeholder_message: "告诉我您的项目...",
 
     // Footer
+    footer_description: "热衷于创建创新网络解决方案的全栈开发者。",
+    footer_quick_links: "快速链接",
+    footer_contact_title: "联系方式",
+    footer_years: "年",
+    footer_projects_count: "项目",
+    footer_technologies: "技术",
+    footer_hire_me: "让我们一起工作",
+    footer_made_with: "制作于",
+    footer_in: "在",
     footer_rights: "版权所有",
   },
 
@@ -805,6 +919,14 @@ const translations = {
     // About
     about_title: "私について",
     about_subtitle: "革新的なソリューションを構築する情熱的な開発者",
+    about_greeting: "👋 こんにちは、私は",
+    about_role: "フルスタック開発者",
+    about_highlight_experience_label: "経験",
+    about_highlight_experience_value: "2年",
+    about_highlight_projects_label: "プロジェクト",
+    about_highlight_projects_value: "11件完了",
+    about_highlight_focus_label: "専門",
+    about_highlight_focus_value: "ウェブ開発",
     about_text:
       "技術サポートにおける確かな経験を持ち、HTML、CSS、Java、C#などの技術を専門とするウェブ開発者です。<br><br>JavaScript、TypeScript、PHP、Pythonなどの言語についても基本的な知識があり、さまざまな視点からプロジェクトに取り組むことができます。新しい環境や技術に素早く適応する能力に優れています。<br><br>マイクロコンピュータシステムとネットワークの職業資格を取得しており、現在はウェブアプリケーション開発の高度なコースを学んでいます。また、SQL Server（MySQL）やGITなどのツールでの実務経験もあり、これらが私の技術スキルを向上させています。",
 
@@ -923,8 +1045,24 @@ const translations = {
     contact_message: "メッセージ",
     contact_reset: "リセット",
     contact_submit: "送信",
+    contact_placeholder_name: "山田太郎",
+    contact_placeholder_email: "yamada@example.com",
+    contact_placeholder_phone: "+81 90 1234 5678",
+    contact_placeholder_subject: "プロジェクトのコラボレーション",
+    contact_placeholder_message:
+      "あなたのプロジェクトについて教えてください...",
 
     // Footer
+    footer_description:
+      "革新的なウェブソリューションの作成に情熱を注ぐフルスタック開発者。",
+    footer_quick_links: "クイックリンク",
+    footer_contact_title: "お問い合わせ",
+    footer_years: "年",
+    footer_projects_count: "プロジェクト",
+    footer_technologies: "技術",
+    footer_hire_me: "一緒に働きましょう",
+    footer_made_with: "作成",
+    footer_in: "場所",
     footer_rights: "全著作権所有",
   },
 
@@ -961,6 +1099,14 @@ const translations = {
     about_title: "Tungkol sa Akin",
     about_subtitle:
       "Masigasig na developer na bumubuo ng mga makabagong solusyon",
+    about_greeting: "👋 Kumusta, ako si",
+    about_role: "Full Stack Developer",
+    about_highlight_experience_label: "Karanasan",
+    about_highlight_experience_value: "2 Taon",
+    about_highlight_projects_label: "Mga Proyekto",
+    about_highlight_projects_value: "11 Natapos",
+    about_highlight_focus_label: "Pokus",
+    about_highlight_focus_value: "Web Development",
     about_text:
       "Web developer na may solid na karanasan sa technical support at nag-specialize sa mga teknolohiya tulad ng HTML, CSS, Java, at C#.<br><br>Mayroon din akong pangunahing kaalaman sa mga wika tulad ng JavaScript, TypeScript, PHP, at Python, na nagbibigay-daan sa akin na lapitan ang mga proyekto mula sa iba't ibang pananaw. Kilala ako sa aking kakayahang mabilis na mag-adapt sa mga bagong kapaligiran at teknolohiya.<br><br>Ang aking edukasyon ay kinabibilangan ng vocational qualification sa Microcomputer Systems and Networks, at kasalukuyan akong nag-aaral ng higher-level course sa Web Application Development. Mayroon din akong practical experience sa mga tool tulad ng SQL Server (MySQL) at GIT, na nagpapahusay sa aking technical skills.",
 
@@ -1075,8 +1221,24 @@ const translations = {
     contact_message: "Mensahe",
     contact_reset: "I-reset",
     contact_submit: "Isumite",
+    contact_placeholder_name: "Juan dela Cruz",
+    contact_placeholder_email: "juan@example.com",
+    contact_placeholder_phone: "+63 912 345 6789",
+    contact_placeholder_subject: "Kolaborasyon sa proyekto",
+    contact_placeholder_message:
+      "Sabihin sa akin ang tungkol sa iyong proyekto...",
 
     // Footer
+    footer_description:
+      "Full Stack Developer na masigasig sa paglikha ng mga makabagong solusyon sa web.",
+    footer_quick_links: "Mabilis na Mga Link",
+    footer_contact_title: "Makipag-ugnayan",
+    footer_years: "Taon",
+    footer_projects_count: "Proyekto",
+    footer_technologies: "Teknolohiya",
+    footer_hire_me: "Magtrabaho Tayo",
+    footer_made_with: "Ginawa ng may",
+    footer_in: "sa",
     footer_rights: "Lahat ng karapatan ay nakalaan",
   },
 
@@ -1112,6 +1274,14 @@ const translations = {
     // About
     about_title: "À Propos de Moi",
     about_subtitle: "Développeur passionné créant des solutions innovantes",
+    about_greeting: "👋 Bonjour, je suis",
+    about_role: "Développeur Full Stack",
+    about_highlight_experience_label: "Expérience",
+    about_highlight_experience_value: "2 Ans",
+    about_highlight_projects_label: "Projets",
+    about_highlight_projects_value: "11 Terminés",
+    about_highlight_focus_label: "Focus",
+    about_highlight_focus_value: "Développement Web",
     about_text:
       "Développeur web avec une solide expérience en support technique et spécialisation dans des technologies comme HTML, CSS, Java et C#.<br><br>J'ai également des connaissances de base en JavaScript, TypeScript, PHP et Python, me permettant d'aborder les projets sous différents angles. Je me distingue par ma capacité à m'adapter rapidement aux nouveaux environnements et technologies.<br><br>Ma formation comprend un diplôme professionnel en Systèmes Micro-informatiques et Réseaux, et je suis actuellement en formation supérieure en Développement d'Applications Web. J'ai également une expérience pratique avec des outils comme SQL Server (MySQL) et GIT.",
 
@@ -1226,8 +1396,23 @@ const translations = {
     contact_message: "Message",
     contact_reset: "Réinitialiser",
     contact_submit: "Envoyer",
+    contact_placeholder_name: "Jean Dupont",
+    contact_placeholder_email: "jean@exemple.fr",
+    contact_placeholder_phone: "+33 6 12 34 56 78",
+    contact_placeholder_subject: "Collaboration de projet",
+    contact_placeholder_message: "Parlez-moi de votre projet...",
 
     // Footer
+    footer_description:
+      "Développeur Full Stack passionné par la création de solutions web innovantes.",
+    footer_quick_links: "Liens Rapides",
+    footer_contact_title: "Contact",
+    footer_years: "Années",
+    footer_projects_count: "Projets",
+    footer_technologies: "Technologies",
+    footer_hire_me: "Travaillons Ensemble",
+    footer_made_with: "Fait avec",
+    footer_in: "à",
     footer_rights: "Tous droits réservés",
   },
 
@@ -1262,6 +1447,14 @@ const translations = {
     // About
     about_title: "Über Mich",
     about_subtitle: "Entwickler innovativer Lösungen",
+    about_greeting: "👋 Hallo, ich bin",
+    about_role: "Full Stack Entwickler",
+    about_highlight_experience_label: "Erfahrung",
+    about_highlight_experience_value: "2 Jahre",
+    about_highlight_projects_label: "Projekte",
+    about_highlight_projects_value: "11 Abgeschlossen",
+    about_highlight_focus_label: "Fokus",
+    about_highlight_focus_value: "Webentwicklung",
     about_text:
       "Webentwickler mit solider Erfahrung im technischen Support und Spezialisierung auf Technologien wie HTML, CSS, Java und C#.<br><br>Ich habe auch Grundkenntnisse in Sprachen wie JavaScript, TypeScript, PHP und Python, die es mir ermöglichen, Projekte aus verschiedenen Perspektiven anzugehen. Ich zeichne mich durch meine Fähigkeit aus, mich schnell an neue Umgebungen und Technologien anzupassen.<br><br>Meine Ausbildung umfasst eine Berufsqualifikation in Mikrocomputersystemen und Netzwerken, und ich studiere derzeit einen höheren Kurs in Webanwendungsentwicklung. Ich habe auch praktische Erfahrung mit Tools wie SQL Server (MySQL) und GIT.",
 
@@ -1375,8 +1568,23 @@ const translations = {
     contact_message: "Nachricht",
     contact_reset: "Zurücksetzen",
     contact_submit: "Senden",
+    contact_placeholder_name: "Max Mustermann",
+    contact_placeholder_email: "max@beispiel.de",
+    contact_placeholder_phone: "+49 123 456 7890",
+    contact_placeholder_subject: "Projektzusammenarbeit",
+    contact_placeholder_message: "Erzählen Sie mir von Ihrem Projekt...",
 
     // Footer
+    footer_description:
+      "Full Stack Entwickler mit Leidenschaft für innovative Weblösungen.",
+    footer_quick_links: "Schnelllinks",
+    footer_contact_title: "Kontakt",
+    footer_years: "Jahre",
+    footer_projects_count: "Projekte",
+    footer_technologies: "Technologien",
+    footer_hire_me: "Lass uns Zusammenarbeiten",
+    footer_made_with: "Gemacht mit",
+    footer_in: "in",
     footer_rights: "Alle Rechte vorbehalten",
   },
 
@@ -1411,6 +1619,14 @@ const translations = {
     // About
     about_title: "Chi Sono",
     about_subtitle: "Sviluppatore appassionato che crea soluzioni innovative",
+    about_greeting: "👋 Ciao, sono",
+    about_role: "Sviluppatore Full Stack",
+    about_highlight_experience_label: "Esperienza",
+    about_highlight_experience_value: "2 Anni",
+    about_highlight_projects_label: "Progetti",
+    about_highlight_projects_value: "11 Completati",
+    about_highlight_focus_label: "Focus",
+    about_highlight_focus_value: "Sviluppo Web",
     about_text:
       "Sviluppatore web con solida esperienza nel supporto tecnico e specializzazione in tecnologie come HTML, CSS, Java e C#.<br><br>Ho anche conoscenze di base in linguaggi come JavaScript, TypeScript, PHP e Python, che mi permettono di affrontare i progetti da diverse prospettive. Mi distinguo per la mia capacità di adattarmi rapidamente a nuovi ambienti e tecnologie.<br><br>La mia formazione include una qualifica professionale in Sistemi Microinformatici e Reti, e attualmente sto studiando un corso di livello superiore in Sviluppo di Applicazioni Web. Ho anche esperienza pratica con strumenti come SQL Server (MySQL) e GIT.",
 
@@ -1525,8 +1741,23 @@ const translations = {
     contact_message: "Messaggio",
     contact_reset: "Ripristina",
     contact_submit: "Invia",
+    contact_placeholder_name: "Mario Rossi",
+    contact_placeholder_email: "mario@esempio.it",
+    contact_placeholder_phone: "+39 123 456 7890",
+    contact_placeholder_subject: "Collaborazione progetto",
+    contact_placeholder_message: "Raccontami del tuo progetto...",
 
     // Footer
+    footer_description:
+      "Sviluppatore Full Stack appassionato di creare soluzioni web innovative.",
+    footer_quick_links: "Link Rapidi",
+    footer_contact_title: "Contatti",
+    footer_years: "Anni",
+    footer_projects_count: "Progetti",
+    footer_technologies: "Tecnologie",
+    footer_hire_me: "Lavoriamo Insieme",
+    footer_made_with: "Fatto con",
+    footer_in: "a",
     footer_rights: "Tutti i diritti riservati",
   },
 
@@ -1562,6 +1793,14 @@ const translations = {
     // About
     about_title: "Sobre Mim",
     about_subtitle: "Desenvolvedor apaixonado criando soluções inovadoras",
+    about_greeting: "👋 Olá, sou",
+    about_role: "Desenvolvedor Full Stack",
+    about_highlight_experience_label: "Experiência",
+    about_highlight_experience_value: "2 Anos",
+    about_highlight_projects_label: "Projetos",
+    about_highlight_projects_value: "11 Concluídos",
+    about_highlight_focus_label: "Foco",
+    about_highlight_focus_value: "Desenvolvimento Web",
     about_text:
       "Desenvolvedor web com sólida experiência em suporte técnico e especialização em tecnologias como HTML, CSS, Java e C#.<br><br>Também tenho conhecimentos básicos em linguagens como JavaScript, TypeScript, PHP e Python, permitindo-me abordar projetos de várias perspectivas. Destaco-me pela minha capacidade de me adaptar rapidamente a novos ambientes e tecnologias.<br><br>Minha formação inclui qualificação profissional em Sistemas de Microcomputadores e Redes, e atualmente estou estudando um curso de nível superior em Desenvolvimento de Aplicações Web. Também tenho experiência prática com ferramentas como SQL Server (MySQL) e GIT.",
 
@@ -1676,8 +1915,23 @@ const translations = {
     contact_message: "Mensagem",
     contact_reset: "Redefinir",
     contact_submit: "Enviar",
+    contact_placeholder_name: "João Silva",
+    contact_placeholder_email: "joao@exemplo.com",
+    contact_placeholder_phone: "+351 123 456 789",
+    contact_placeholder_subject: "Colaboração em projeto",
+    contact_placeholder_message: "Conte-me sobre seu projeto...",
 
     // Footer
+    footer_description:
+      "Desenvolvedor Full Stack apaixonado por criar soluções web inovadoras.",
+    footer_quick_links: "Links Rápidos",
+    footer_contact_title: "Contato",
+    footer_years: "Anos",
+    footer_projects_count: "Projetos",
+    footer_technologies: "Tecnologias",
+    footer_hire_me: "Vamos Trabalhar Juntos",
+    footer_made_with: "Feito com",
+    footer_in: "em",
     footer_rights: "Todos os direitos reservados",
   },
 
@@ -1711,6 +1965,15 @@ const translations = {
 
     // About
     about_title: "소개",
+    about_subtitle: "혁신적인 솔루션을 구축하는 열정적인 개발자",
+    about_greeting: "👋 안녕하세요, 저는",
+    about_role: "풀스택 개발자",
+    about_highlight_experience_label: "경험",
+    about_highlight_experience_value: "2년",
+    about_highlight_projects_label: "프로젝트",
+    about_highlight_projects_value: "11개 완료",
+    about_highlight_focus_label: "전문분야",
+    about_highlight_focus_value: "웹 개발",
     about_text:
       "HTML, CSS, Java, C#와 같은 기술을 전문으로 하는 기술 지원 분야에서 탄탄한 경험을 가진 웹 개발자입니다.<br><br>또한 JavaScript, TypeScript, PHP, Python과 같은 언어에 대한 기본 지식을 가지고 있어 다양한 관점에서 프로젝트에 접근할 수 있습니다. 새로운 환경과 기술에 빠르게 적응하는 능력으로 두각을 나타냅니다.<br><br>제 교육에는 마이크로컴퓨터 시스템 및 네트워크에 대한 직업 자격이 포함되어 있으며, 현재 웹 애플리케이션 개발 고급 과정을 공부하고 있습니다. 또한 SQL Server(MySQL) 및 GIT와 같은 도구에 대한 실무 경험이 있습니다.",
 
@@ -1823,8 +2086,22 @@ const translations = {
     contact_message: "메시지",
     contact_reset: "재설정",
     contact_submit: "제출",
+    contact_placeholder_name: "김철수",
+    contact_placeholder_email: "kim@example.com",
+    contact_placeholder_phone: "+82 10 1234 5678",
+    contact_placeholder_subject: "프로젝트 협업",
+    contact_placeholder_message: "프로젝트에 대해 말해주세요...",
 
     // Footer
+    footer_description: "혁신적인 웹 솔루션 창출에 열정적인 풀스택 개발자.",
+    footer_quick_links: "빠른 링크",
+    footer_contact_title: "연락처",
+    footer_years: "년",
+    footer_projects_count: "프로젝트",
+    footer_technologies: "기술",
+    footer_hire_me: "함께 일해요",
+    footer_made_with: "만든 곳",
+    footer_in: "위치",
     footer_rights: "모든 권리 보유",
   },
 
@@ -1859,6 +2136,14 @@ const translations = {
     // About
     about_title: "نبذة عني",
     about_subtitle: "مطور شغوف ببناء حلول مبتكرة",
+    about_greeting: "👋 مرحباً، أنا",
+    about_role: "مطور ويب متكامل",
+    about_highlight_experience_label: "الخبرة",
+    about_highlight_experience_value: "سنتان",
+    about_highlight_projects_label: "المشاريع",
+    about_highlight_projects_value: "11 مكتمل",
+    about_highlight_focus_label: "التركيز",
+    about_highlight_focus_value: "تطوير الويب",
     about_text:
       "مطور ويب ذو خبرة قوية في الدعم الفني والتخصص في تقنيات مثل HTML وCSS وJava وC#.<br><br>لدي أيضًا معرفة أساسية بلغات مثل JavaScript وTypeScript وPHP وPython، مما يسمح لي بمعالجة المشاريع من وجهات نظر مختلفة. أتميز بقدرتي على التكيف بسرعة مع البيئات والتقنيات الجديدة.<br><br>يشمل تعليمي مؤهلاً مهنياً في أنظمة الحواسيب الصغيرة والشبكات، وأدرس حالياً دورة عالية المستوى في تطوير تطبيقات الويب. لدي أيضًا خبرة عملية مع أدوات مثل SQL Server (MySQL) وGIT.",
 
@@ -1971,8 +2256,22 @@ const translations = {
     contact_message: "الرسالة",
     contact_reset: "إعادة تعيين",
     contact_submit: "إرسال",
+    contact_placeholder_name: "أحمد محمد",
+    contact_placeholder_email: "ahmed@example.com",
+    contact_placeholder_phone: "+966 50 123 4567",
+    contact_placeholder_subject: "التعاون في المشروع",
+    contact_placeholder_message: "أخبرني عن مشروعك...",
 
     // Footer
+    footer_description: "مطور ويب متكامل شغوف بإنشاء حلول ويب مبتكرة.",
+    footer_quick_links: "روابط سريعة",
+    footer_contact_title: "اتصل",
+    footer_years: "سنوات",
+    footer_projects_count: "مشاريع",
+    footer_technologies: "تقنيات",
+    footer_hire_me: "لنعمل معاً",
+    footer_made_with: "صنع بـ",
+    footer_in: "في",
     footer_rights: "جميع الحقوق محفوظة",
   },
 };
